@@ -1,1124 +1,214 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Play | OM Handbook</title>
-  <meta name="generator" content="VuePress 1.8.2">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@700&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&amp;display=swap">
-  <link rel="shortcut icon" href="/images/favicon/favicon2.png">
-  <meta name="description" content="Hassan Djamous FTW!">
-
-  <link rel="preload" href="/assets/css/0.styles.12ba5cd5.css" as="style">
-  <link rel="preload" href="/assets/js/app.97f87da8.js" as="script">
-  <link rel="preload" href="/assets/js/2.8f172fab.js" as="script">
-  <link rel="preload" href="/assets/js/17.847915df.js" as="script">
-  <link rel="preload" href="/assets/js/3.573b5638.js" as="script">
-  <link rel="prefetch" href="/assets/js/10.faa366c4.js">
-  <link rel="prefetch" href="/assets/js/11.829f1fa3.js">
-  <link rel="prefetch" href="/assets/js/12.6ac7a53b.js">
-  <link rel="prefetch" href="/assets/js/13.830cce95.js">
-  <link rel="prefetch" href="/assets/js/14.fa4c5b80.js">
-  <link rel="prefetch" href="/assets/js/15.bae53112.js">
-  <link rel="prefetch" href="/assets/js/16.ad7ba0d5.js">
-  <link rel="prefetch" href="/assets/js/18.efbdbfa3.js">
-  <link rel="prefetch" href="/assets/js/19.98eb7ab5.js">
-  <link rel="prefetch" href="/assets/js/20.cf041437.js">
-  <link rel="prefetch" href="/assets/js/21.e67e3327.js">
-  <link rel="prefetch" href="/assets/js/4.8afa5883.js">
-  <link rel="prefetch" href="/assets/js/5.c21404f0.js">
-  <link rel="prefetch" href="/assets/js/6.2dc4e6b0.js">
-  <link rel="prefetch" href="/assets/js/7.643d2b41.js">
-  <link rel="prefetch" href="/assets/js/8.5b34147e.js">
-  <link rel="prefetch" href="/assets/js/9.7ed2c5ef.js">
-  <link rel="stylesheet" href="/assets/css/0.styles.12ba5cd5.css">
-</head>
-
-<body>
-  <div id="app" data-server-rendered="true">
-    <div class="theme-container">
-      <header class="navbar">
-        <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
-            viewBox="0 0 448 512" class="icon">
-            <path fill="currentColor"
-              d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
-            </path>
-          </svg></div> <a href="/" class="home-link router-link-active"><img src="/images/favicon/favicon.png"
-            alt="TW Handbook" class="logo"> <span class="site-name can-hide">OM Handbook</span></a>
-        <div class="links">
-          <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!---->
-          </div>
-          <nav class="nav-links can-hide">
-            <div class="nav-item"><a href="/" class="nav-link">
-                Home
-              </a></div>
-            <div class="nav-item"><a href="/rulebook/" class="nav-link router-link-active">
-                Rulebook
-              </a></div>
-            <div class="nav-item"><a href="/map/" class="nav-link">
-                Game Map
-              </a></div>
-            <div class="nav-item"><a href="/simulator/" class="nav-link">
-                Simulator
-              </a></div>
-            <div class="nav-item"><a href="/history/" class="nav-link">
-                History Corner
-              </a></div>
-            <div class="nav-item"><a href="/about/" class="nav-link">
-                About
-              </a></div> <!---->
-          </nav>
-        </div>
-      </header>
-      <div class="sidebar-mask"></div>
-      <aside class="sidebar">
-        <nav class="nav-links">
-          <div class="nav-item"><a href="/" class="nav-link">
-              Home
-            </a></div>
-          <div class="nav-item"><a href="/rulebook/" class="nav-link router-link-active">
-              Rulebook
-            </a></div>
-          <div class="nav-item"><a href="/map/" class="nav-link">
-              Game Map
-            </a></div>
-          <div class="nav-item"><a href="/simulator/" class="nav-link">
-              Simulator
-            </a></div>
-          <div class="nav-item"><a href="/history/" class="nav-link">
-              History Corner
-            </a></div>
-          <div class="nav-item"><a href="/about/" class="nav-link">
-              About
-            </a></div> <!---->
-        </nav>
-        <ul class="sidebar-links">
-          <li><a href="/rulebook/" aria-current="page" class="sidebar-link">Introduction</a></li>
-          <li><a href="/rulebook/setup.html" class="sidebar-link">Setup</a></li>
-          <li><a href="/rulebook/play.html" aria-current="page" class="active sidebar-link">Play</a>
-            <ul class="sidebar-sub-headers">
-              <li class="sidebar-sub-header"><a href="/rulebook/play.html#i-tactical-phase-prep" class="sidebar-link">I.
-                  Tactical Phase Prep</a>
-                <ul class="sidebar-sub-headers">
-                  <li class="sidebar-sub-header"><a href="/rulebook/play.html#_1-season-change" class="sidebar-link">1.
-                      Season Change</a></li>
-                  <li class="sidebar-sub-header"><a href="/rulebook/play.html#_2-sanctuary-adjustment"
-                      class="sidebar-link">2. Sanctuary Adjustment</a></li>
-                  <li class="sidebar-sub-header"><a href="/rulebook/play.html#_3-moundou-negotiation"
-                      class="sidebar-link">3. Moundou Negotiation</a></li>
-                </ul>
-              </li>
-              <li class="sidebar-sub-header"><a href="/rulebook/play.html#ii-impulses" class="sidebar-link">II.
-                  Impulses</a>
-                <ul class="sidebar-sub-headers">
-                  <li class="sidebar-sub-header"><a href="/rulebook/play.html#_1-movement" class="sidebar-link">1.
-                      Movement</a></li>
-                  <li class="sidebar-sub-header"><a href="/rulebook/play.html#_2-battle" class="sidebar-link">2.
-                      Battle</a></li>
-                </ul>
-              </li>
-              <li class="sidebar-sub-header"><a href="/rulebook/play.html#iii-tactical-phase-wrap-up"
-                  class="sidebar-link">III. Tactical Phase Wrap-up</a>
-                <ul class="sidebar-sub-headers">
-                  <li class="sidebar-sub-header"><a href="/rulebook/play.html#_1-special-guerrilla-withdrawal"
-                      class="sidebar-link">1. Special Guerrilla Withdrawal</a></li>
-                  <li class="sidebar-sub-header"><a href="/rulebook/play.html#_2-desert-water-supply-check"
-                      class="sidebar-link">2. Desert Water Supply Check</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="/rulebook/tables.html" class="sidebar-link">Tables</a></li>
-          <li><a href="/rulebook/terms.html" class="sidebar-link">Terms and Definitions</a></li>
-        </ul>
-      </aside>
-      <main class="page">
-        <div class="theme-default-content content__default">
-          <h1 id="play"><a href="#play" class="header-anchor">#</a> Play</h1>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>First time players should read the <a href="/rulebook">Game Intro</a> before jumping into play.</p>
-          </div>
-          <div class="mobile"></div>
-          <blockquote>
-            <p><a href="#i-tactical-phase-prep">I. Tactical Phase Prep</a></p>
-            <p><a href="#ii-impulses">II. Impulses (Movement and Battle)</a></p>
-            <p><a href="#iii-tactical-phase-wrap-up">II. Tactical Phase Wrap-up</a></p>
-          </blockquote>
-          <div class="dice"><img src="/images/dice/d1.svg" id="die1" class="filter" data-v-b628d33e> <img
-              src="/images/dice/d6.svg" id="die2" class="filter" data-v-b628d33e></div>
-          <p>This page of the rulebook reorganizes the 1991 game rules to fit the Toyota Wars <a
-              href="/rulebook/tables.html#sequence-of-play">Sequence of Play</a>. This means that this page basically
-            walks players through the game in chronological order, beginning with Tactical Phase Prep, proceeding to
-            Movement and Battle, and so on.</p>
-          <p>The Movement and Battle sections are organized topically, rather than chronologically, since they contain
-            an abundance of rules which may or may not be relevant at any given time during Movement or Battle. As a
-            result, these sections include a summary of the order of play for Movement and Battle, titled <a
-              href="#_1-movement">&quot;Order of Movement&quot;</a> and <a href="#_2-battle">&quot;Order of
-              Battle&quot;</a>. These summaries link directly to the major portions of Movement and Battle in the order
-            that they are played.</p>
-          <h2 id="i-tactical-phase-prep"><a href="#i-tactical-phase-prep" class="header-anchor">#</a> I. Tactical Phase
-            Prep</h2>
-          <h3 id="_1-season-change"><a href="#_1-season-change" class="header-anchor">#</a> 1. Season Change</h3>
-          <p>Each Tactical Phase corresponds to a single, six-month season; Rain Season, or Dry Season.</p>
-          <p>Odd numbered Tactical Phases are Rain Season.</p>
-          <ul>
-            <li>All wells marked on the map are functional.</li>
-            <li>All marshes on the map restrict movement (see <a href="#_1-1-3-terrain-effects">Terrain Effects
-                rules</a> and <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> for details).
-            </li>
-          </ul>
-          <p>Even numbered Tactical Phases are Dry Season.</p>
-          <ul>
-            <li>Only perennial wells <code>3.7</code> are functional (see <a href="#_1-2-desert-water-supply">Desert
-                Water Supply rules</a>).</li>
-            <li>Only perennial marshes <code>1.4</code> restrict movement.</li>
-          </ul>
-          <div class="sim"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>The simulator includes a Season marker to the left of the game map. The 1991 game pieces do not.</p>
-          </div>
-          <h3 id="_2-sanctuary-adjustment"><a href="#_2-sanctuary-adjustment" class="header-anchor">#</a> 2. Sanctuary
-            Adjustment</h3>
-          <blockquote>
-            <p>During the first Tactical Phase, there is no need to perform this step. Skip straight to the first <a
-                href="#ii-impulses">Impulse</a>.</p>
-          </blockquote>
-          <p>All guerrilla units in the Sanctuary Arrival hexes <code>2.4</code> are moved into the main portion of each
-            Sanctuary, where they are free to re-enter the Chadian hex grid (see <a
-              href="#_1-4-3-leaving-a-sanctuary-box">Leaving a Sanctuary Box</a>).</p>
-          <h3 id="_3-moundou-negotiation"><a href="#_3-moundou-negotiation" class="header-anchor">#</a> 3. Moundou
-            Negotiation</h3>
-          <p>The Rebel Commander attempts to rally the neutral MRP guerrilla faction to his cause if MRP have not
-            already been attacked at their base in Moundou <code>1849</code>.</p>
-          <ul>
-            <li>If attacked by any player, MRP are immediately activated and controlled by the player which did not
-              attack them.</li>
-            <li>Otherwise, MRP joins the Rebel side during the negotiation phase, on a single die roll of 5 or 6.</li>
-          </ul>
-          <p>Remove the IGF (Independent Guerrilla Faction) marker from the MRP force when they are activated.</p>
-          <h2 id="ii-impulses"><a href="#ii-impulses" class="header-anchor">#</a> II. Impulses</h2>
-          <div class="mobile"></div>
-          <blockquote>
-            <p><a href="#_1-movement">1. Movement</a></p>
-            <p><a href="#_2-battle">2. Battle</a></p>
-          </blockquote>
-          <p>The Government Player performs Movement and Battle in order to complete their Segment (see <a
-              href="/rulebook/#sequence-of-play">Sequence of Play intro</a>). Next, the Rebel Player does the same. A
-            Government Segment followed by a Rebel Segment constitutes one Impulse. The Impulse is repeated three times
-            per Tactical Phase.</p>
-          <p>At the start of the first Tactical Phase, the Government Player is also the FAN Player. </p>
-          <h3 id="_1-movement"><a href="#_1-movement" class="header-anchor">#</a> 1. Movement</h3>
-          <blockquote>
-            <p><a href="#_1-1-basic-movement-rules">1.1 Basic Movement Rules</a> <br> <a
-                href="#_1-2-desert-water-supply">1.2 Desert Water Supply</a><br> <a href="#_1-3-intervention-units">1.3
-                Intervention Units</a><br> <a href="#_1-4-guerrilla-sanctuaries">1.4 Guerrilla Sanctuaries</a><br> <a
-                href="#_1-5-commanders-and-leaders">1.5 Commanders and Leaders</a><br> <a
-                href="#_1-6-fortifications">1.6 Fortifications</a><br> <a href="#_1-7-air-transport">1.7 Air
-                Transport</a></p>
-          </blockquote>
-          <blockquote>
-            <p><strong>Order of Movement</strong></p>
-            <ul>
-              <li>Sanctuary entry for guerrillas in New Arrivals (see <a href="#_1-4-2-sanctuary-countries">entry into
-                  Sanctuaries</a>)</li>
-              <li>Ground movement and movement of Air units (see <a href="#_1-1-basic-movement-rules">Basic Movement
-                  Rules</a>)</li>
-              <li>Air transport and airmobile movement (see <a href="#_1-7-air-transport">Air transport</a>)</li>
-            </ul>
-          </blockquote>
-          <h4 id="_1-1-basic-movement-rules"><a href="#_1-1-basic-movement-rules" class="header-anchor">#</a> 1.1 Basic
-            Movement Rules</h4>
-          <p>Units move individually or in stacks through the hex grid, expending the movement points (MPs) for entering
-            various kinds of terrain (see <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a>),
-            for infiltrating out of enemy-occupied hexes, and so on. While one player moves units, the other player
-            awaits their Segment and is not allowed to move any units.</p>
-          <p>The number of MPs available to a unit is determined by its Movement Allowance, which is displayed on the
-            unit piece (see <a href="/rulebook/#_1-1-combat-units">Combat Units intro</a>). No unit may ever exceed its
-            printed Movement Allowance unless it moves only a single hex.</p>
-          <p>If a player wishes to attack enemy units, they must move the attacking pieces to a position adjacent to the
-            enemy units they wish to attack. This is done during the Movement part of a player Segment; adjacent enemy
-            units are then attacked during Battle (see <a href="#_2-2-combat-procedure">combat procedure</a>).</p>
-          <h5 id="_1-1-2-stacking-limits"><a href="#_1-1-2-stacking-limits" class="header-anchor">#</a> 1.1.2 Stacking
-            Limits</h5>
-          <p>One of the basic limitations on Movement is how many units are allowed to occupy a single hex. &quot;Step
-            Value&quot; is a metric that is used to determine such stacking limits.</p>
-          <p>Two charts are used to calculate stacking limits:</p>
-          <ul>
-            <li>Each unit type has a Step Value assigned to it. The Step Value of each kind of unit can be found in the
-              <a href="/rulebook/tables.html#unit-costs-and-values">Unit Costs and Values Charts</a>.
-            </li>
-            <li>Each type of terrain has a maximum step value allowed. The stacking limit for different zones can be
-              found in the <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a>. While the Terrain
-              Effects Charts impose a lower limit in some cases, the default stacking limit is a Step Value of 9.</li>
-          </ul>
-          <p>Note that Commanders and Leaders never count against stacking, and that there is no stacking limit in
-            Sanctuaries <code>2.5</code>.</p>
-          <p>Although units can cross through hexes without respecting their stacking limits, each unit on the game map
-            must respect the maximum stacking limit of the destination hex. Stacking limits also apply throughout the
-            combat portion of each player Segment.</p>
-          <p>No substitutions or &quot;breakdown&quot; of larger units into smaller units is allowed during Movement.
-            See example below.</p>
-          <div class="example"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>A battalion unit (which is a single game piece) cannot be broken down into three company units (three
-              game pieces). However, a large force — say, three battalions and two companies stationed in Moussoro
-              <code>2033</code> — may be broken up into its individual units during Movement. Two battalions and a
-              company may head north toward Salal, while a battalion and a company may break off and head south toward
-              Massakori.
-            </p>
-          </div>
-          <div class="note"></div>
-          <h5 id="_1-1-3-terrain-effects"><a href="#_1-1-3-terrain-effects" class="header-anchor">#</a> 1.1.3 Terrain
-            Effects</h5>
-          <blockquote>
-            <p>This section touches on important details in the <a href="/rulebook/tables.html#terrain-effects">Terrain
-                Effects Charts</a>.</p>
-          </blockquote>
-          <p>Marshes</p>
-          <ul>
-            <li>Perennial Marshes <code>1.4</code> restrict movement year-round, while Seasonal Marshes <code>1.5</code>
-              only restrict movement during the Rain Season (odd-numbered Tactical Phases).</li>
-            <li>See the <a href="/rulebook/tables.html#marshes">marshes Terrain Effects Chart</a> for details and
-              exceptions.</li>
-          </ul>
-          <p>Rivers</p>
-          <ul>
-            <li>Note that the extra +1 movement cost listed on the <a
-                href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> does not apply to land units
-              using the road or track movement rate when crossing a river.</li>
-          </ul>
-          <p>Mountains</p>
-          <ul>
-            <li>Mountain defense adjustments and movement costs apply to any hex that contains any portion of mountain
-              terrain. Note that the updated game map does not include partial mountain hexes; a hex is either a
-              mountain hex or it is not.</li>
-          </ul>
-          <p>Roads and Tracks</p>
-          <ul>
-            <li>Units may use road or track movement rates only when following the road/track through a hexside
-              (including rivers).</li>
-            <li>In marsh hexes, road and track movement rates may only be used during the Dry Season. Roads make no
-              difference during Rainy Season (see <a href="/rulebook/tables.html#marshes">marshes Terrain Effects
-                Charts</a> for details).</li>
-          </ul>
-          <p>Partial Lake</p>
-          <ul>
-            <li>Partial Lake hexes <code>1.7</code> can be traversed as if they are normal land hexes.</li>
-          </ul>
-          <h5 id="_1-1-4-enemy-occupied-hexes"><a href="#_1-1-4-enemy-occupied-hexes" class="header-anchor">#</a> 1.1.4
-            Enemy Occupied Hexes</h5>
-          <p>There are no Zones of Control in Chad; units may freely enter and exit hexes adjacent to enemy units
-            without any penalty or additional cost.</p>
-          <p>Generally, units may not enter hexes containing enemy units. However, under certain specific conditions,
-            adjacent units can actually pass through an enemy occupied hex, using one of two methods: Infiltration or
-            Leader Overrun.</p>
-          <h6 id="infiltration"><a href="#infiltration" class="header-anchor">#</a> Infiltration</h6>
-          <ul>
-            <li>A guerrilla unit or leader that is adjacent (or moves adjacent) to an enemy-occupied hex may move
-              through (infiltrate) the target hex into another hex adjacent to the target. Conventional units may never
-              infiltrate.</li>
-            <li>An infiltrating unit must have sufficient Movement Points remaining to pay for all terrain costs in the
-              infiltrated hex and a destination hex that does not contain any enemy units.</li>
-            <li>The infiltrator must also pay one additional MP if the infiltrated hex is occupied by enemy guerrilla
-              units and/or FANT units; or two additional MPs if the target hex contains any Libyan or French combat
-              units.</li>
-            <li><strong>Infiltration may never occur through a hex containing any OAU combat units or a Fortification
-                marker</strong>.</li>
-          </ul>
-          <h6 id="leader-overrun"><a href="#leader-overrun" class="header-anchor">#</a> Leader Overrun</h6>
-          <ul>
-            <li>A unit (including Commander or Guerrilla Leader) is not required to stop or expend any additional MPs
-              when entering a hex occupied solely by an enemy Commander or Leaders.</li>
-            <li>If the moving unit is a Combat Unit (as opposed to a Commander, Guerrilla Leader, or Special Unit), the
-              Commander and/or Leaders in the target hex are immediately eliminated.</li>
-          </ul>
-          <p>Units may never end movement in or attack from a hex containing enemy units.</p>
-          <h5 id="_1-1-5-prohibited-movement"><a href="#_1-1-5-prohibited-movement" class="header-anchor">#</a> 1.1.5
-            Prohibited Movement</h5>
-          <p>Units may not perform any of the following movement actions:</p>
-          <ul>
-            <li>Retreat into a Sanctuary Entry hex <code>2.4</code> outside of Chad as a result of combat.
-              <ul>
-                <li>Exception: eligible units may safely retreat into the Sudan Free Zone <code>2.3</code> (see <a
-                    href="#_1-4-4-movement-in-the-sudan-free-zone">Movement in the Sudan</a>).</li>
-              </ul>
-            </li>
-            <li>Enter or retreat across an all-Lake hex <code>1.6</code>.</li>
-            <li>Retreat or advance into an enemy-occupied hex as a result of combat.</li>
-          </ul>
-          <p>Any unit that cannot avoid performing any of these prohibited movement actions is immediately eliminated.
-          </p>
-          <h4 id="_1-2-desert-water-supply"><a href="#_1-2-desert-water-supply" class="header-anchor">#</a> 1.2 Desert
-            Water Supply</h4>
-          <p>All combat units operating in desert terrain <code>1.1</code> must ensure themselves a water supply.</p>
-          <h5 id="_1-2-1-the-desert"><a href="#_1-2-1-the-desert" class="header-anchor">#</a> 1.2.1 The Desert</h5>
-          <p>Desert terrain <code>1.1</code> includes all terrain within the Desert zone including depression hexes
-            <code>1.10</code> and mountain hexes <code>1.9</code> (see <a href="#desert-1-1">Desert definition</a>).
-          </p>
-          <p>Water is supplied in a desert terrain hex from four possible sources:</p>
-          <ul>
-            <li>towns <code>3.1</code></li>
-            <li>villages <code>3.2</code></li>
-            <li>oases <code>1.11</code></li>
-            <li>wells <code>3.7</code> - <code>3.8</code></li>
-          </ul>
-          <p>Marshes, rivers and lakes may not be used as a water source. </p>
-          <h5 id="_1-2-2-water-requirements"><a href="#_1-2-2-water-requirements" class="header-anchor">#</a> 1.2.2
-            Water Requirements</h5>
-          <p>Units must abide by the following water requirements:</p>
-          <ul>
-            <li>Conventional units operating in desert terrain must begin each friendly player Segment on a water source
-              in order to function normally.</li>
-            <li>All combat units of any type operating in desert terrain must end each Tactical Phase on a water source
-              (see <a href="#_2-desert-water-supply-check">Desert Water Supply Check</a> during Tactical Phase Wrap-up).
-              These restrictions also apply to units that end their retreat in desert terrain as a result of combat.
-            </li>
-          </ul>
-          <p>Commanders and leaders do not have to meet water requirements.</p>
-          <h5 id="_1-2-3-effects-on-conventional-units"><a href="#_1-2-3-effects-on-conventional-units"
-              class="header-anchor">#</a> 1.2.3 Effects on Conventional Units</h5>
-          <p>If a conventional unit begins a player Segment in a desert terrain, but not on a functioning water source,
-            the unit suffers the following penalties (round down in case of fractions):</p>
-          <ul>
-            <li>Movement allowance halved</li>
-            <li>Conventional and guerrilla combat strengths halved</li>
-          </ul>
-          <p>Both penalties apply for the entire player Segment. A unit may only avoid the penalties by beginning a
-            subsequent Segment on a functioning water source, or in a non-desert terrain hex.</p>
-          <p>Use <code>No Water</code> markers to indicate which units suffer the indicated penalties.</p>
-          <h4 id="_1-3-intervention-units"><a href="#_1-3-intervention-units" class="header-anchor">#</a> 1.3
-            Intervention Units</h4>
-          <h5 id="_1-3-1-roads-and-tracks"><a href="#_1-3-1-roads-and-tracks" class="header-anchor">#</a> 1.3.1 Roads
-            and Tracks</h5>
-          <p>All OAU and Libyan units inside Chad must always remain on or adjacent to a hex containing a Road or Track.
-          </p>
-          <p>French are not restricted by roads and tracks.</p>
-          <h5 id="_1-3-2-north-region"><a href="#_1-3-2-north-region" class="header-anchor">#</a> 1.3.2 North Region
-          </h5>
-          <p>The North Region comprises the prefectures of Aouzou, Tibesti, Bourkou, and Ennedi, (<a
-              href="/map/#regions">see map legend item <code>2.1</code></a> and <a
-              href="/rulebook/terms.html#region-2-1">&quot;Region&quot; definition</a>).</p>
-          <p>Intervention units that may not enter the north region at any time:</p>
-          <ul>
-            <li>French and OAU ground units</li>
-            <li>Units moving by <a href="#_1-7-air-transport">Air Transport or
-                Airmobile Movement</a></li>
-          </ul>
-          <p>Units that may:</p>
-          <ul>
-            <li>Air units (no Air units are involved in Opération Manta)</li>
-          </ul>
-          <h5 id="_1-3-3-effect-on-guerrilla-infiltration"><a href="#_1-3-3-effect-on-guerrilla-infiltration"
-              class="header-anchor">#</a> 1.3.3 Effect on Guerrilla Infiltration</h5>
-          <ul>
-            <li>Any guerrillas or guerrilla leaders that perform Infiltration through a target hex occupied
-              by at least one unfriendly Libyan or French
-              combat unit must pay two additional Movement Points
-              instead of the usual one.</li>
-            <li>Guerrillas and
-              leaders may not perform Infiltration through a
-              target hex that contains an OAU combat unit.</li>
-          </ul>
-          <p>See <a href="#infiltration">infiltration rules</a>.</p>
-          <h5 id="_1-3-4-oau-unit-movement"><a href="#_1-3-4-oau-unit-movement" class="header-anchor">#</a> 1.3.4 OAU
-            Unit Movement</h5>
-          <p>OAU units are considered peacekeeping
-            forces. As such, they must abide by the following special movement rules:</p>
-          <ul>
-            <li>They may never
-              voluntarily move adjacent to an enemy (Rebel)
-              combat unit.</li>
-            <li>If an OAU unit finds itself adjacent
-              to a Rebel combat unit at the beginning of the
-              friendly segment of an Impulse, the OAU unit
-              must be moved so that it is no longer adjacent.</li>
-            <li>If the Government player cannot or will not do so,
-              then the OAU unit is immediately withdrawn
-              from play.</li>
-          </ul>
-          <p>Note that OAU units also never participate in combat, even as defenders (see <a
-              href="#_2-5-4-special-oau-restrictions-and-automatic-withdrawal">OAU combat restrictions</a>).</p>
-          <div class="more"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>Given the above restrictions, players will find that OAU units are mainly useful for...</p>
-            <ul>
-              <li>Blocking enemy movement during the length of the enemy player Segment</li>
-              <li><a href="#_1-6-fortifications">Building fortifications</a></li>
-            </ul>
-            <p>OAU units may not use their own fortifications in battle since they can neither attack nor defend,
-              meaning that their fortifications should by built where they can be accessed used by other government
-              troops in combat.</p>
-          </div>
-          <h4 id="_1-4-guerrilla-sanctuaries"><a href="#_1-4-guerrilla-sanctuaries" class="header-anchor">#</a> 1.4
-            Guerrilla Sanctuaries</h4>
-          <p>Sanctuary countries <code>2.5</code> allow certain guerrilla factions with whom they have agreements to
-            take refuge from enemy attack within their borders. Each guerrilla faction has a Sanctuary that contains the
-            faction's initials. Sanctuary Entry hexes <code>2.4</code> corresponding to each Sanctuary are located along
-            the border with Chad.</p>
-          <p>Certain guerrilla factions may also enter hexes on the map designated as part of the Sudan (see <a
-              href="/rulebook/play.html#_1-4-4-movement-in-the-sudan-free-zone">movement in the Sudan</a>).</p>
-          <h5 id="_1-4-1-sanctuary-entry-hexes"><a href="#_1-4-1-sanctuary-entry-hexes" class="header-anchor">#</a>
-            1.4.1 Sanctuary Entry Hexes</h5>
-          <p>During the friendly Segment of an Impulse, a
-            guerrilla combat unit or leader may enter a Sanctuary Entry hex for its designated Sanctuary country
-            from an adjacent hex inside Chad. Movement
-            cost for the Entry hex is 1 MP.</p>
-          <p>The unit must then
-            be placed in the New Arrival zone for the remainder of the Movement portion of a player Segment. Units may
-            not attack or
-            be attacked in an Entry hex.</p>
-          <div class="map"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>The New Arrivals zone can be found:</p>
-            <ul>
-              <li>1991 map: In a floating sanctuary box outside of Chad.</li>
-              <li>2021 map: The Sanctuary Entry hexes <em>are</em> the New Arrivals zone <code>2.4</code>.</li>
-            </ul>
-          </div>
-          <h5 id="_1-4-2-sanctuary-countries"><a href="#_1-4-2-sanctuary-countries" class="header-anchor">#</a> 1.4.2
-            Sanctuary Countries</h5>
-          <p>When Guerrilla Units occupy a Sanctuary New Arrival zone from a previous player Segment, the Movement
-            portion of a subsequent Segment must begin with moving these units to the Sanctuary proper. From there, they
-            are free to enter the Chadian hex grid.</p>
-          <p>In short, <strong>units cannot enter and leave a Sanctuary in the same player Segment.</strong></p>
-          <div class="map"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>Sanctuaries can be found:</p>
-            <ul>
-              <li>1991 map: In a floating Sanctuary bod outside Chad.</li>
-              <li>2021 map: directly in the neighboring Sanctuary Country <code>2.5</code>.</li>
-            </ul>
-          </div>
-          <p>During the <a href="#_1-special-guerrilla-withdrawal">Special Guerrilla Withdrawal</a> portion of Tactical
-            Phase Wrap-up, certain guerrilla units and Commanders may enter New Arrivals from anywhere on the game map.
-          </p>
-          <h5 id="_1-4-3-leaving-a-sanctuary-box"><a href="#_1-4-3-leaving-a-sanctuary-box" class="header-anchor">#</a>
-            1.4.3 Leaving a Sanctuary box</h5>
-          <p>A unit in a Sanctuary (but not in the
-            New Arrivals section) may renter the hex-grid
-            during any friendly movement segment of an
-            Impulse.</p>
-          <p>To re-enter Chad...</p>
-          <ul>
-            <li>The unit is taken out of the box
-              and placed in any Sanctuary Entry hex in the
-              country where the box is located, paying one MP.</li>
-            <li>It must then <em>immediately</em> enter an adjacent hex inside Chad,
-              paying the normal movement cost for the hex and
-              any other hexes it may enter.</li>
-            <li>If for any reason the
-              unit cannot leave its Entry hex and enter Chad, it
-              is placed in the new arrivals section once more.</li>
-          </ul>
-          <div class="example"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>A FAP unit wishes to move into the Sanctuary box in Libya.</p>
-            <ul>
-              <li>The unit must be adjacent to an Entry hex on Chad's northern border, and must have one MP to expend in
-                order to enter the hex.</li>
-              <li>Once arrived in the Entry Hex, the unit remains in the hex as a New Arrival for the remainder of the
-                Segment.</li>
-              <li>At the beginning of the following Segment, the FAP unit is moved out of the Entry/New Arrival hex into
-                Libya itself.</li>
-              <li>During the player's next turn, the unit may then expend one MP and be placed in any Libya Sanctuary
-                Entry hex. From there, it must <em>immediately</em> enter an adjacent hex inside Chad (only units
-                <em>leaving</em> Chad and <em>entering</em> the Sanctuary remain in the Entry hex).
-              </li>
-              <li>If for some reason the unit cannot enter Chad, it becomes a New Arrival once again and thus remains in
-                the entry hex.</li>
-            </ul>
-          </div>
-          <div class="recap"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>While Sanctuary Entry hexes are in reality used both to enter and exit Sanctuaries, when using the 2021
-              game map it is only when entering a Sanctuary that units remain on the Sanctuary Entry hexes for a given
-              amount of time. When leaving the Sanctuary, the Sanctuary Entry hexes really only exist to indicate
-              <em>where</em> a unit can re-enter Chad, as well as to incur the cost of 1 MP.
-            </p>
-          </div>
-          <h5 id="_1-4-4-movement-in-the-sudan-free-zone"><a href="#_1-4-4-movement-in-the-sudan-free-zone"
-              class="header-anchor">#</a> 1.4.4 Movement in the Sudan Free Zone</h5>
-          <p>A small portion of Sudan around the
-            Village of El Geneina <code>4234</code> is included on
-            the regular hex-grid. Only units and leaders from
-            factions designated in the Sudan Sanctuary
-            (FAN, PLA, ANL) may enter or exit this area of
-            the map. Otherwise, all normal movement
-            rules, including Sanctuary Entry Hexes apply.
-            See also <a href="/rulebook/play.html#_2-4-1-sudan-free-zone">Combat in Sudan Free Zone</a>.</p>
-          <h4 id="_1-5-commanders-and-leaders"><a href="#_1-5-commanders-and-leaders" class="header-anchor">#</a> 1.5
-            Commanders and Leaders</h4>
-          <h5 id="_1-5-1-guerrilla-faction-leaders"><a href="#_1-5-1-guerrilla-faction-leaders"
-              class="header-anchor">#</a> 1.5.1 Guerrilla Faction Leaders</h5>
-          <p>During the friendly player segment of an
-            Impulse, faction leaders controlled by the player
-            may exercise the exact same movement allowed for other units of their faction, unless specifically prevented
-            from doing so.</p>
-          <p>By way of review, possible leader movements therefore includes the following:</p>
-          <ul>
-            <li>Move from hex to hex within Chad using
-              normal movement.</li>
-            <li>Move into the New Arrival zone of a Sanctuary for the leader's designated faction via the appropriate
-              Sanctuary Entry hex.</li>
-            <li>Move between the Sanctuary designated for the leader's faction and a corresponding Sanctuary Entry hex
-              in order to reenter Chad.</li>
-          </ul>
-          <h5 id="_1-5-2-government-commander"><a href="#_1-5-2-government-commander" class="header-anchor">#</a> 1.5.2
-            Government Commander</h5>
-          <p>On top of normal movement from hex to hex within Chad, the Government player's Commander may also move
-            directly between any two Airfields or Airbases in Chad occupied by Government-affiliated combat units
-            (either conventional or guerrilla).</p>
-          <p>The Government Commander can never enter a Sanctuary box or Sanctuary Entry hex.</p>
-          <h5 id="_1-5-3-rebel-commander"><a href="#_1-5-3-rebel-commander" class="header-anchor">#</a> 1.5.3 Rebel
-            Commander</h5>
-          <p>On top of normal movement within Chad, the Rebel Commander may also perform the following special movement:
-          </p>
-          <ul>
-            <li>Enter <em>any</em> Sanctuary, regardless of Sanctuary affiliation</li>
-            <li>Move from any Sanctuary to any
-              other Sanctuary</li>
-          </ul>
-          <p>The Rebel Commander should enter and leave Sanctuaries using normal movement rules (see <a
-              href="#_1-4-guerrilla-sanctuaries">Guerrilla Sanctuaries</a>).</p>
-          <h5 id="_1-5-4-fan-commander-s-movement-bonus"><a href="#_1-5-4-fan-commander-s-movement-bonus"
-              class="header-anchor">#</a> 1.5.4 FAN Commander's Movement Bonus</h5>
-          <p>Any FAN or pro-FAN guerrillas and leaders
-            that begin the friendly player segment stacked
-            with (or in the same Sanctuary box) as the FAN
-            Commander double their movement point
-            allowance during the movement segment of the
-            first Impulse of each Tactical Phase. This bonus does not apply to the second or third Impulses
-            of a Tactical Phase. The units must also end their
-            movement stacked with or adjacent to the Commander.</p>
-          <div class="more"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>This rule reflects the superior
-              military training of Habré's FAN units, which were
-              pretty much able to run rings around their opponents due to superior planning. It also reflects Habré's
-              own tactical skill, which impacts not only his movement bonus but also the skill points he brings to
-              combat, which are triple that of Goukouni's.</p>
-          </div>
-          <h4 id="_1-6-fortifications"><a href="#_1-6-fortifications" class="header-anchor">#</a> 1.6 Fortifications
-          </h4>
-          <p>Fortifications may be built in any hex inside
-            Chad. Only conventional infantry battalions
-            (of all nationalities) may construct fortifications.
-            Infantry companies stacked together may not construct fortifications even if their total number equals or
-            exceeds that of a battalion.</p>
-          <p>To build a fortification:</p>
-          <ul>
-            <li>A battalion
-              must remain in a single hex during an entire
-              friendly player segment of any Impulse.</li>
-            <li>Place a
-              Fortification Construction marker on the
-              battalion's hex at the beginning of the player
-              segment (see <a href="/rulebook/#markers">markers intro</a>).</li>
-            <li>Replace the Construction marker with a Completed Fortification marker
-              at the end of the segment.</li>
-          </ul>
-          <p>Once built, Fortifications are neutral; they benefit whichever player has units defending in the hex.</p>
-          <p>Rules for Fortification Marker removal:</p>
-          <ul>
-            <li>A Fortification marker is removed only if the defender completely vacates the hex due to retreat or
-              elimination in combat.</li>
-            <li>It is not removed if the defender leaves the hex during normal movement.</li>
-          </ul>
-          <h4 id="_1-7-air-transport"><a href="#_1-7-air-transport" class="header-anchor">#</a> 1.7 Air Transport</h4>
-          <p>Airfields and Airbases are used for Air Transport of selected ground units from any one Airfield/
-            Airbase to another inside Chad during Government segments.</p>
-          <p>Eligible units:</p>
-          <ul>
-            <li>The Government Commander piece (Habré or
-              Goukouni, depending upon who is the
-              Government)</li>
-            <li>Up to two FANT paratroop companies</li>
-            <li>Up to three French 11th Division
-              paratroop units (if any have entered play)</li>
-          </ul>
-          <p>To use Air Transport, a unit must:</p>
-          <ul>
-            <li>Occupy an
-              Airfield or Airbase hex</li>
-            <li>Must not perform any other movement during the friendly segment. After all movement is completed for the
-              player segment, but prior to any combat, each eligible unit may move directly to another Airfield or
-              Airbase unoccupied by Rebel-affiliated
-              units
-              <ul>
-                <li>However, an eligible unit that was placed on the map
-                  during the current player segment may use Air
-                  Transport (e.g. a French unit brought in from the Government Replacements and Reinforcements box).
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <p><strong>Important</strong>: French units may not land in an Airfield/Airbase in the North region.</p>
-          <h5 id="_1-7-1-airmobile-movement"><a href="#_1-7-1-airmobile-movement" class="header-anchor">#</a> 1.7.1
-            Airmobile Movement</h5>
-          <p>French airborne units may use airmobile
-            movement (in Opération Manta, a single airborne paratroop battalion is in play). Airmobile movement allows
-            units to move to/from
-            friendly Airfields and Airbases.</p>
-          <p>Airmobile movement allows:</p>
-          <ul>
-            <li>Movement up to 30 hexes.
-              This may be through enemy units and prohibited
-              terrain. Each hex moved through costs only 1 MP.</li>
-            <li>Movement of up to three French
-              11th Division paratroop units (if any have entered play).</li>
-          </ul>
-          <p>To use Airmobile movement, a unit must:</p>
-          <ul>
-            <li>Choose one of the following:
-              <ul>
-                <li>Either occupy an Airfield or Airbase hex at the
-                  <em>beginning</em> of its turn. In this case it may <em>end</em> the move on any
-                  playable terrain.)
-                </li>
-                <li>Or <em>end</em> its movement on a Airfield or Airbase
-                  unoccupied by Rebel-affiliated units. In this case it may
-                  <em>begin</em> on any playable terrain.
-                </li>
-              </ul>
-            </li>
-            <li>Units may not move off/on to
-              the map using Airmobile movement.</li>
-            <li>A unit using Airmobile movement may not
-              conduct any other movement in that movement
-              segment.
-              <ul>
-                <li>However, an eligible unit that was placed on the map during the current player segment may use
-                  Airmobile movement.</li>
-              </ul>
-            </li>
-          </ul>
-          <p>Airmobile movement is conducted after all movement is completed for the player
-            segment, but prior to any combat.</p>
-          <p><strong>Important</strong>: French units may not land in an Airfield/Airbase in the North region.</p>
-          <h3 id="_2-battle"><a href="#_2-battle" class="header-anchor">#</a> 2. Battle</h3>
-          <blockquote>
-            <p><a href="#_2-1-guerrilla-pre-combat-operations">2.1 Guerrilla Pre-Combat Operations</a><br> <a
-                href="#_2-2-combat-procedure">2.2 Combat Procedure</a> <br> <a href="#_2-3-terrain-and-combat">2.3
-                Terrain and Combat</a> <br> <a href="#_2-4-sanctuaries-and-combat">2.4 Sanctuaries and Combat</a> <br>
-              <a href="#_2-5-special-combat-rules">2.5 Special Combat Rules</a> <br> <a
-                href="#_2-6-commanders-an-leaders-in-combat">2.6 Commanders and Leaders in Combat</a> <br>
-            </p>
-          </blockquote>
-          <blockquote>
-            <p><strong>Order of Battle</strong></p>
-            <ul>
-              <li>Guerrilla pre-combat operations (<a href="#_2-1-guerrilla-pre-combat-operations">link</a>)</li>
-              <li>Combat prep (see <a href="#_2-2-1-combat-determination">Combat Determination</a> and <a
-                  href="#_2-2-2-differential-assessment">Differential Assessment</a>)</li>
-              <li>Combat resolution (see <a href="#_2-2-3-combat-results">combat Results</a> and <a
-                  href="#_2-5-2-advance-after-combat">Advance After Combat</a>)</li>
-            </ul>
-          </blockquote>
-          <p>Combat occurs after the completion of all
-            movement in a player Segment of an Impulse. There are two types of
-            combat: guerrilla combat and conventional combat. The <a
-              href="/rulebook/tables.html#combat-determination">Combat Determination Chart</a> will be used to determine
-            which occurs.
-            Both types of combat use the same <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>.
-          </p>
-          <h4 id="_2-1-guerrilla-pre-combat-operations"><a href="#_2-1-guerrilla-pre-combat-operations"
-              class="header-anchor">#</a> 2.1 Guerrilla Pre-Combat Operations</h4>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>First time players may want to skip pre-combat operations and go straight to <a
-                href="#_2-2-combat-procedure">combat procedure</a>.</p>
-          </div>
-          <p>When a player announces their intention to attack a given hex, a guerrilla defender in that hex may attempt
-            a number of pre-combat operations in order to maintain control of the situation.</p>
-          <p>All defending guerrillas and guerrilla leaders in a hex, as a group, must perform one (and
-            only one) of the following operations after <a href="#_2-2-1-combat-determination">Combat determination</a>
-            and <a href="#_2-2-2-differential-assessment">Differential assessment</a>, but before combat is actually
-            resolved:</p>
-          <ul>
-            <li>Remain in place and defend the target hex
-              normally (see <a href="#_2-2-combat-procedure">normal combat procedure</a>)</li>
-            <li>Attempt withdrawal (see below)</li>
-            <li>Perform an Ambush (see below)</li>
-          </ul>
-          <p>If any defending units remain in the target
-            hex following Guerrilla Pre-Combat Operations,
-            combat is performed normally with surviving
-            attacking and defending units. If no defending
-            units remain, the attacking units may perform
-            <a href="#_2-5-2-advance-after-combat">Advance after Combat</a>.
-          </p>
-          <h6 id="withdrawal"><a href="#withdrawal" class="header-anchor">#</a> Withdrawal</h6>
-          <p>Determining Withdrawal:</p>
-          <ul>
-            <li>The defending player rolls
-              one die for all the guerrilla units in the target hex.</li>
-            <li>The player consults the <a href="/rulebook/tables.html#guerrilla-pre-combat-withdrawal">Guerrilla
-                Pre-Combat Withdrawal Table</a> to determine possible Withdrawal given the die roll.</li>
-          </ul>
-          <p>Depending on the result from the Guerrilla
-            Pre-Combat Withdrawal Table, either all of the guerrilla units in the hex will be allowed to
-            retreat or none of them will.</p>
-          <p>Retreating procedure:</p>
-          <ul>
-            <li>Retreating units must move two hexes away in any direction.</li>
-            <li>Units need not remain stacked together.</li>
-            <li>If a retreating unit is forced to violate stacking or perform <a
-                href="#_1-1-5-prohibited-movement">Prohibited Movement</a>, it is eliminated.</li>
-          </ul>
-          <h6 id="ambush"><a href="#ambush" class="header-anchor">#</a> Ambush</h6>
-          <p>Using whatever guerrilla combat units, Commanders, and
-            Leaders they wish, the defending player selects one adjacent hex
-            containing attacking enemy units and immediately performs a special combat against all
-            units in that hex.</p>
-          <p>This combat follows all normal rules, except that the
-            guerrillas are treated as the attacker for all purposes and the original attacking units are treated as
-            the defenders. One additional rule concerns terrain:</p>
-          <ul>
-            <li>The ambush defender (i.e. the original
-              attacker) receives no terrain or improved position combat benefits (see <a
-                href="#_2-3-terrain-and-combat">Terrain and Combat</a>).</li>
-            <li>If the original defending force contains no conventional units, all original defenders remaining in the
-              target hex
-              after the Ambush receive no terrain or improved position combat benefits if the original attacker
-              subsequently performs the
-              scheduled combat. This is because a pure guerrilla force exposes itself by making an ambush and lacks
-              cover from conventional units to return to its
-              positions.</li>
-          </ul>
-          <p>Note that if any losses, retreats, or advances after combat occur, the originally scheduled combat
-            differential will need to be recalculated.</p>
-          <h4 id="_2-2-combat-procedure"><a href="#_2-2-combat-procedure" class="header-anchor">#</a> 2.2 Combat
-            Procedure</h4>
-          <p>Combat may only occur between adjacent
-            enemy units. Below are the basic rules for combat:</p>
-          <ul>
-            <li>Units are never required to attack.</li>
-            <li>If any unit in a hex attacks, however, all
-              units in the same hex must perform combat
-              against a single hex occupied by enemy units.</li>
-            <li>All units defending a hex must defend.</li>
-            <li>Units in different hexes may combine their
-              strengths when attacking an enemy-occupied hex.</li>
-            <li>Two or more defending hexes may not be
-              attacked simultaneously.</li>
-          </ul>
-          <h5 id="_2-2-1-combat-determination"><a href="#_2-2-1-combat-determination" class="header-anchor">#</a> 2.2.1
-            Combat Determination</h5>
-          <p>Use the <a href="/rulebook/tables.html#combat-determination">Combat Determination Chart</a> to decide which
-            type of combat must be
-            performed. Combat type depends on two factors:</p>
-          <ul>
-            <li>The composition of the forces involved in a particular combat</li>
-            <li>The presence of improved positions (Town, Oasis, or a Fortification) in the defender's hex</li>
-          </ul>
-          <p>If Conventional Combat occurs, use only the
-            conventional combat strengths printed on both
-            the attacking and defending units to determine
-            the proper combat differential (see <a href="/rulebook/#_1-1-combat-units">Combat Units intro</a>). If
-            Guerrilla Combat occurs, use only the guerrilla combat strengths
-            instead.</p>
-          <p><strong>Important</strong>: No mixing of conventional
-            and guerrilla combat strengths in a player's attacking or defending force is allowed. Under no
-            circumstances may one side in a combat use
-            guerrilla strengths, while the other uses conventional strengths.</p>
-          <h5 id="_2-2-2-differential-assessment"><a href="#_2-2-2-differential-assessment" class="header-anchor">#</a>
-            2.2.2 Differential Assessment</h5>
-          <p>Once Combat Determination has concluded, the players calculate the strength differential between the forces
-            involved in Combat.</p>
-          <p>The differential is always positive; if a conventional battle occurs between two forces with conventional
-            strengths of 20 and 9, the differential will always be 11, regardless of which force represents the attacker
-            or defender, Government units or Rebel units, FAN Player or FAP Player.</p>
-          <h5 id="_2-2-3-combat-results"><a href="#_2-2-3-combat-results" class="header-anchor">#</a> 2.2.3 Combat
-            Results</h5>
-          <p>Determine Combat Results using the <a href="/rulebook/tables.html#combat-results">Combat Results Chart</a>.
-            Six factors determine combat results as per the Chart:</p>
-          <ul>
-            <li>The strength differential between the forces involved</li>
-            <li>The terrain occupied by the defender (see <a href="#_2-3-terrain-and-combat">Terrain and Combat</a>)
-            </li>
-            <li>The presence of Commanders in either force</li>
-            <li>The presence of Guerrilla Leaders in either force</li>
-            <li>The presence of French units in either force</li>
-            <li>A roll of both dice</li>
-          </ul>
-          <p>If the defending force is eliminated or retreats for any reason. any number of surviving
-            units belonging to the attacking force may occupy the target hex (see <a
-              href="#_2-5-2-advance-after-combat">Advance After Combat</a>).</p>
-          <h4 id="_2-3-terrain-and-combat"><a href="#_2-3-terrain-and-combat" class="header-anchor">#</a> 2.3 Terrain
-            and Combat</h4>
-          <p>The &quot;Defense Adjustment&quot; column of the
-            <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> lists the number of
-            points that are added to the defender's total
-            combat strength (either guerrillas or conventional) when the defender occupies certain advantageous terrain.
-            Adjustments are cumulative.
-          </p>
-          <div class="example"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>A defending force possessing a combat strength of 5 is
-              located in a Mountain hex (+3 Defense Adjustment) containing an oasis
-              (+1 Defense Adjustment). As per the Terrain Effects Charts, its total combat strength is 9 (5+3+1).</p>
-          </div>
-          <h5 id="_2-31-improved-positions"><a href="#_2-31-improved-positions" class="header-anchor">#</a> 2.31
-            Improved Positions</h5>
-          <p>While many terrain types provide defensive advantages in combat by adding to the defender's combat
-            strength, an Improved Position provides this advantage <em>in conventional combat alone</em>. As per the
-            Terrain Effects Charts, there are three types of improved positions:</p>
-          <ul>
-            <li>Fortification marker (see <a href="#_1-6-fortifications">building fortifications</a>)</li>
-            <li>Town</li>
-            <li>Oasis</li>
-          </ul>
-          <p>Defenders in an Improved Position hex may only choose guerilla
-            combat if...</p>
-          <ul>
-            <li>All defenders are guerrillas</li>
-            <li>The defending player chooses guerrilla
-              combat</li>
-          </ul>
-          <p>In a guerrilla combat, <em>no defensive adjustment is made for Improved Positions</em>. This rule is
-            incorporated in the <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> (see chart
-            key, letter <code>H</code>).</p>
-          <h4 id="_2-4-sanctuaries-and-combat"><a href="#_2-4-sanctuaries-and-combat" class="header-anchor">#</a> 2.4
-            Sanctuaries and Combat</h4>
-          <p>Combat may not occur between units inside
-            a Sanctuary or between units in different
-            Sanctuaries.</p>
-          <h5 id="_2-4-1-sudan-free-zone"><a href="#_2-4-1-sudan-free-zone" class="header-anchor">#</a> 2.4.1 Sudan Free
-            Zone</h5>
-          <p>Combat may occur in the portion of the
-            Sudan contained on the regular hex-grid <code>2.3</code>, but
-            only between units and leaders permitted to enter
-            this area of the map (FAN, PLA, and
-            ANL guerrillas and leaders).</p>
-          <h4 id="_2-5-special-combat-rules"><a href="#_2-5-special-combat-rules" class="header-anchor">#</a> 2.5
-            Special Combat Rules</h4>
-          <h5 id="_2-5-1-stacking-during-and-after-combat"><a href="#_2-5-1-stacking-during-and-after-combat"
-              class="header-anchor">#</a> 2.5.1 Stacking during and after Combat</h5>
-          <p>Stacking limitations are in effect for both
-            players at all times throughout the combat portion of a player segment. Note the following implications:</p>
-          <ul>
-            <li>Overstacked units are
-              eliminated prior to resolving a combat.</li>
-            <li>Retreating units may not enter a hex
-              if this violates stacking restrictions.</li>
-            <li>If retreating units cannot avoid violating stacking restrictions, they are eliminated.</li>
-          </ul>
-          <h5 id="_2-5-2-advance-after-combat"><a href="#_2-5-2-advance-after-combat" class="header-anchor">#</a> 2.5.2
-            Advance After Combat</h5>
-          <p>If the defending force is eliminated or retreats for any reason, any number of surviving
-            units belonging to the attacking force may occupy the target hex.</p>
-          <p>Advance After Combat rules:</p>
-          <ul>
-            <li>Advance after combat is always voluntary for the
-              attacker.</li>
-            <li>The attacker cannot violate stacking limits when advancing to the target hex after combat.</li>
-            <li>Units in a defending force may never advance after combat, even if the attacker retreats or is
-              eliminated.</li>
-          </ul>
-          <h5 id="_2-5-4-special-oau-restrictions-and-automatic-withdrawal"><a
-              href="#_2-5-4-special-oau-restrictions-and-automatic-withdrawal" class="header-anchor">#</a> 2.5.4 Special
-            OAU Restrictions and Automatic Withdrawal</h5>
-          <p>OAU units are considered &quot;peacekeeping&quot;
-            forces that neither attack nor defend normally.</p>
-          <ul>
-            <li>OAU units may never attack and are withdrawn
-              from play if the hex they occupy is attacked by Rebel combat units.</li>
-            <li>All OAU units are withdrawn before calculating the combat differential or resolving the attack.</li>
-          </ul>
-          <h4 id="_2-6-commanders-and-leaders-in-combat"><a href="#_2-6-commanders-and-leaders-in-combat"
-              class="header-anchor">#</a> 2.6 Commanders and Leaders in Combat</h4>
-          <h5 id="_2-6-1-guerrilla-leaders"><a href="#_2-6-1-guerrilla-leaders" class="header-anchor">#</a> 2.6.1
-            Guerrilla Leaders</h5>
-          <p>A guerrilla leader stacked in the same hex with one or more units of his faction
-            modifies the die roll on the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>.</p>
-          <ul>
-            <li>Add one (+ 1) to the die roll if the leader
-              is part of the attacking force.</li>
-            <li>Subtract one (-1) from the die roll if the leader is part of
-              the defending force.</li>
-          </ul>
-          <p>Limitations:</p>
-          <ul>
-            <li>No more than one Leader may be added or subtracted from a die roll, regardless
-              of the number of eligible Leaders present on a
-              side.</li>
-            <li>No guerrilla Leader may be used to modify
-              the die roll for a force whose Commander is
-              present in the combat hex and hence contributing to combat strength.</li>
-          </ul>
-          <div class="note"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>The above rule has been kept unmodified from the original 1991 rulebook. However, players may want to try
-              applying die roll modifiers based on force strength, rather than on whether a force is an attacker or
-              defender. This is because the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a> is
-              blind to whether or not a force is attacking or defending. Instead, the table favors stronger forces on
-              high die rolls and weaker forces on low die rolls (strength being a factor of conventional or guerrilla
-              strength points). The impact of die roll modifiers on combat results could be more meaningful if the
-              modifiers directly relate to the mechanics of the results chart:</p>
-            <ul>
-              <li>The presence of a Leader among the stronger force would increase the die roll, which is generally an
-                advantage for the stronger force given the Combat Results table.</li>
-              <li>The presence of a Leader among the weaker force would decrease the die roll, which is generally an
-                advantage for the weaker force given the Combat Results table.</li>
-            </ul>
-            <p>If the 1991 rules are used, a stronger defending force will almost always find itself in the awkward
-              position of being penalized for having a Leader present to aid his troops. Conversely, a weaker attacking
-              force is also penalized for having a Leader present. The same can be said for French forces present —
-              players may want to base French die roll modifiers on force strength as well (see <a
-                href="#_2-6-3-french-units">French units in combat</a>).
-              <br><br>
-            </p>
-          </div>
-          <div class="note"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>There are some situations when a higher roll may inflict more losses on a stronger force and a lower roll
-              may inflict more losses on a weaker force (see cells 11:10-11, 12:8-11, 13:6-7, 14:6-9, 15:6-9, and 16:6-9
-              in the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>); however, the general
-              pattern is that higher rolls are more favorable to stronger forces. Moreover, the exceptions to this
-              general rule only occur when the combat strength differential is 11 strength points or more.
-              <br><br>
-              If players also wish to take this design feature of the Combat Results Table into account, one could
-              imagine a rule like the following:
-            </p>
-            <ul>
-              <li>Leaders and French units increase the die roll when stacked with the stronger force in a battle; they
-                decrease the die roll when stacked with the weaker force in a battle.</li>
-              <li>Exception: when the combat strength differential is 11 strength points or more, no die roll modifiers
-                are applied.
-                <ul>
-                  <li>First, because the Combat Results Table will not always favor the appropriate force in these
-                    situations.</li>
-                  <li>Second, because the effect of a die roll modifier on combat is almost irrelevant anyway given the
-                    large differentials.</li>
-                </ul>
-              </li>
-            </ul>
-            <p>Finally, a potential solution could also be to redesign the Combat results Chart and erase the
-              irregularities in cells 11:10-11, 12:8-11, 13:6-7, 14:6-9, 15:6-9, and 16:6-9.</p>
-          </div>
-          <div class="more"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>One theory emerges as the reason behind the irregularities in cells 13:6-7, 14:6-9, 15:6-9, and 16:6-9 of
-              the Combat Results Table. The function of these cells may have been to temper the overwhelming advantage
-              of a significantly larger force by slightly decreasing this advantage on statistically common die rolls.
-              However, this theory does not explain the irregularities in cells 11:10-11 and 12:8-11.</p>
-          </div>
-          <h5 id="_2-6-2-commanders"><a href="#_2-6-2-commanders" class="header-anchor">#</a> 2.6.2 Commanders</h5>
-          <p>If the Commander is stacked in the same hex
-            with one or more units of his faction, his military skill is added to the combat strength of his units as
-            per the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>.</p>
-          <div class="more"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>There is some ambiguity about the Commander combat modifier in the 1991 Strategy and Tactics rulebook.
-              The &quot;Commanders in combat&quot; rule prescribes the following:</p>
-            <ul>
-              <li><em>Add his Military Skill level to the die roll if the leader is
-                  part of the attacking force.</em></li>
-              <li><em>Subtract his Military Skill level from the die roll if the leader
-                  is part of the defending force.</em></li>
-            </ul>
-            <p>However, the rule as written contradicts the <a href="/rulebook/tables.html#combat-results">Combat
-                Results Table</a>, which prescribed adding the Commander's military skill to his force's combat
-              strength. Since the latter modifies combat results in a more meaningful way, the updated rulebook has
-              favored this version of the Commander combat modifier.</p>
-          </div>
-          <h5 id="_2-6-3-french-units"><a href="#_2-6-3-french-units" class="header-anchor">#</a> 2.6.3 French Units
-          </h5>
-          <p>A French ground unit participating in Combat modifies the die roll on the <a
-              href="/rulebook/tables.html#combat-results">Combat Results Table</a>.</p>
-          <ul>
-            <li>Add one (+1) to the die roll if the French
-              unit is part of the attacking force.</li>
-            <li>Subtract one (-1) from the die roll if the French
-              unit is part of the defending force.</li>
-          </ul>
-          <p>No more than one (1) may be added or subtracted from a die
-            roll. regardless of the number of French units
-            present on a side.</p>
-          <p><strong>Important</strong>: Die roll modifiers are <em>not</em> cumulative; for example, if an attacking
-            force as accompanied by both a Leader and a French unit, only 1 is added to the die roll.</p>
-          <div class="note"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>Players may want to try applying die roll modifiers based on force strength, rather than on whether a
-              force is an attacker or defender. See rules for <a
-                href="/rulebook/play.html#_2-6-1-guerrilla-leaders">Leader modifiers in combat</a>, &quot;Notes&quot;
-              section.</p>
-          </div>
-          <div class="more"></div>
-          <div class="custom-block tip">
-            <p class="custom-block-title">TIP</p>
-            <p>This rule represents superior French military planning and operational capabilities. Note that although
-              Habré represents the most skilled Commander in the war, like other Chadian leaders he received no formal
-              military training during his lifetime — Habré's education was in political science. This is a testimony to
-              Habré's military genius, but it also points to the inevitability of French military superiority as a
-              general rule.</p>
-          </div>
-          <h5 id="_2-6-4-leader-and-commander-elimination"><a href="#_2-6-4-leader-and-commander-elimination"
-              class="header-anchor">#</a> 2.6.4 Leader and Commander Elimination</h5>
-          <p>Below are the two different scenarios for Leader and Commander elimination:</p>
-          <ul>
-            <li>Elimination in Combat: Leaders and Commanders are eliminated if
-              all the units they are stacked with suffer total elimination as a result of combat.</li>
-            <li>Elimination in Isolation: A Leader or Commander not stacked with any friendly combat
-              units has no combat strength, and is immediately
-              eliminated the instant an enemy combat unit (not
-              merely another leader, Commander, or Special Unit) enters its
-              hex for any reason.</li>
-          </ul>
-          <p>Leaders or Commanders cannot be attacked or
-            eliminated while in a Sanctuary.</p>
-          <p>Results of elimination:</p>
-          <ul>
-            <li>An eliminated Guerrilla Leader
-              is immediately placed in the New Arrival
-              section of the Sanctuary designated for its faction.</li>
-            <li>If a Commander is eliminated, the game
-              immediately ends and the rival Commander wins the war.</li>
-          </ul>
-          <h2 id="iii-tactical-phase-wrap-up"><a href="#iii-tactical-phase-wrap-up" class="header-anchor">#</a> III.
-            Tactical Phase Wrap-up</h2>
-          <h3 id="_1-special-guerrilla-withdrawal"><a href="#_1-special-guerrilla-withdrawal"
-              class="header-anchor">#</a> 1. Special Guerrilla Withdrawal</h3>
-          <p>Any guerrilla unit, leader, or Commander inside Chad may be withdrawn from the hex it occupies on the map
-            and
-            placed directly in the New Arrival section of the appropriate Sanctuary. No MP's are required or expended
-            for this withdrawal.</p>
-          <h3 id="_2-desert-water-supply-check"><a href="#_2-desert-water-supply-check" class="header-anchor">#</a> 2.
-            Desert Water Supply Check</h3>
-          <p>At the end of each Tactical Phase, all combat units located in the desert terrain, both conventional and
-            guerrilla, that do not occupy a functioning water source are eliminated.</p>
-          <p>Conventional units that do not occupy a functioning water source are also eliminated at the end of each
-            Segment (see <a href="#_1-2-3-effects-on-conventional-units">movement rules for Conventional units in the
-              desert</a>).</p>
-          <div class="desktop"><br> <br> <br> <br> <br> <br></div>
-        </div>
-        <footer class="page-edit"><!----> <!----></footer> <!---->
-      </main>
-    </div>
-    <div class="global-ui"></div>
-  </div>
-  <script src="/assets/js/app.97f87da8.js" defer></script>
-  <script src="/assets/js/2.8f172fab.js" defer></script>
-  <script src="/assets/js/17.847915df.js" defer></script>
-  <script src="/assets/js/3.573b5638.js" defer></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Play | TW Handbook</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&amp;display=swap">
+    <link rel="shortcut icon" href="/images/favicon/favicon2.png">
+    <meta name="description" content="Hassan Djamous FTW!">
+    
+    <link rel="preload" href="/assets/css/0.styles.12ba5cd5.css" as="style"><link rel="preload" href="/assets/js/app.97f87da8.js" as="script"><link rel="preload" href="/assets/js/2.8f172fab.js" as="script"><link rel="preload" href="/assets/js/17.847915df.js" as="script"><link rel="preload" href="/assets/js/3.573b5638.js" as="script"><link rel="prefetch" href="/assets/js/10.faa366c4.js"><link rel="prefetch" href="/assets/js/11.829f1fa3.js"><link rel="prefetch" href="/assets/js/12.6ac7a53b.js"><link rel="prefetch" href="/assets/js/13.830cce95.js"><link rel="prefetch" href="/assets/js/14.fa4c5b80.js"><link rel="prefetch" href="/assets/js/15.bae53112.js"><link rel="prefetch" href="/assets/js/16.ad7ba0d5.js"><link rel="prefetch" href="/assets/js/18.efbdbfa3.js"><link rel="prefetch" href="/assets/js/19.98eb7ab5.js"><link rel="prefetch" href="/assets/js/20.cf041437.js"><link rel="prefetch" href="/assets/js/21.e67e3327.js"><link rel="prefetch" href="/assets/js/4.8afa5883.js"><link rel="prefetch" href="/assets/js/5.c21404f0.js"><link rel="prefetch" href="/assets/js/6.2dc4e6b0.js"><link rel="prefetch" href="/assets/js/7.643d2b41.js"><link rel="prefetch" href="/assets/js/8.5b34147e.js"><link rel="prefetch" href="/assets/js/9.7ed2c5ef.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.12ba5cd5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/favicon/favicon.png" alt="TW Handbook" class="logo"> <span class="site-name can-hide">TW Handbook</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/rulebook/" class="nav-link router-link-active">
+  Rulebook
+</a></div><div class="nav-item"><a href="/map/" class="nav-link">
+  Game Map
+</a></div><div class="nav-item"><a href="/simulator/" class="nav-link">
+  Simulator
+</a></div><div class="nav-item"><a href="/history/" class="nav-link">
+  History Corner
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/rulebook/" class="nav-link router-link-active">
+  Rulebook
+</a></div><div class="nav-item"><a href="/map/" class="nav-link">
+  Game Map
+</a></div><div class="nav-item"><a href="/simulator/" class="nav-link">
+  Simulator
+</a></div><div class="nav-item"><a href="/history/" class="nav-link">
+  History Corner
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/rulebook/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/rulebook/setup.html" class="sidebar-link">Setup</a></li><li><a href="/rulebook/play.html" aria-current="page" class="active sidebar-link">Play</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/rulebook/play.html#i-tactical-phase-prep" class="sidebar-link">I. Tactical Phase Prep</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/rulebook/play.html#_1-season-change" class="sidebar-link">1. Season Change</a></li><li class="sidebar-sub-header"><a href="/rulebook/play.html#_2-sanctuary-adjustment" class="sidebar-link">2. Sanctuary Adjustment</a></li><li class="sidebar-sub-header"><a href="/rulebook/play.html#_3-moundou-negotiation" class="sidebar-link">3. Moundou Negotiation</a></li></ul></li><li class="sidebar-sub-header"><a href="/rulebook/play.html#ii-impulses" class="sidebar-link">II. Impulses</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/rulebook/play.html#_1-movement" class="sidebar-link">1. Movement</a></li><li class="sidebar-sub-header"><a href="/rulebook/play.html#_2-battle" class="sidebar-link">2. Battle</a></li></ul></li><li class="sidebar-sub-header"><a href="/rulebook/play.html#iii-tactical-phase-wrap-up" class="sidebar-link">III. Tactical Phase Wrap-up</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/rulebook/play.html#_1-special-guerrilla-withdrawal" class="sidebar-link">1. Special Guerrilla Withdrawal</a></li><li class="sidebar-sub-header"><a href="/rulebook/play.html#_2-desert-water-supply-check" class="sidebar-link">2. Desert Water Supply Check</a></li></ul></li></ul></li><li><a href="/rulebook/tables.html" class="sidebar-link">Tables</a></li><li><a href="/rulebook/terms.html" class="sidebar-link">Terms and Definitions</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="play"><a href="#play" class="header-anchor">#</a> Play</h1> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>First time players should read the <a href="/rulebook">Game Intro</a> before jumping into play.</p></div> <div class="mobile"></div> <blockquote><p><a href="#i-tactical-phase-prep">I. Tactical Phase Prep</a></p> <p><a href="#ii-impulses">II. Impulses (Movement and Battle)</a></p> <p><a href="#iii-tactical-phase-wrap-up">II. Tactical Phase Wrap-up</a></p></blockquote> <div class="dice"><img src="/images/dice/d1.svg" id="die1" class="filter" data-v-b628d33e> <img src="/images/dice/d6.svg" id="die2" class="filter" data-v-b628d33e></div> <p>This page of the rulebook reorganizes the 1991 game rules to fit the Toyota Wars <a href="/rulebook/tables.html#sequence-of-play">Sequence of Play</a>. This means that this page basically walks players through the game in chronological order, beginning with Tactical Phase Prep, proceeding to Movement and Battle, and so on.</p> <p>The Movement and Battle sections are organized topically, rather than chronologically, since they contain an abundance of rules which may or may not be relevant at any given time during Movement or Battle. As a result, these sections include a summary of the order of play for Movement and Battle, titled <a href="#_1-movement">&quot;Order of Movement&quot;</a> and <a href="#_2-battle">&quot;Order of Battle&quot;</a>. These summaries link directly to the major portions of Movement and Battle in the order that they are played.</p> <h2 id="i-tactical-phase-prep"><a href="#i-tactical-phase-prep" class="header-anchor">#</a> I. Tactical Phase Prep</h2> <h3 id="_1-season-change"><a href="#_1-season-change" class="header-anchor">#</a> 1. Season Change</h3> <p>Each Tactical Phase corresponds to a single, six-month season; Rain Season, or Dry Season.</p> <p>Odd numbered Tactical Phases are Rain Season.</p> <ul><li>All wells marked on the map are functional.</li> <li>All marshes on the map restrict movement (see <a href="#_1-1-3-terrain-effects">Terrain Effects rules</a> and <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> for details).</li></ul> <p>Even numbered Tactical Phases are Dry Season.</p> <ul><li>Only perennial wells <code>3.7</code> are functional (see <a href="#_1-2-desert-water-supply">Desert Water Supply rules</a>).</li> <li>Only perennial marshes <code>1.4</code> restrict movement.</li></ul> <div class="sim"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The simulator includes a Season marker to the left of the game map. The 1991 game pieces do not.</p></div> <h3 id="_2-sanctuary-adjustment"><a href="#_2-sanctuary-adjustment" class="header-anchor">#</a> 2. Sanctuary Adjustment</h3> <blockquote><p>During the first Tactical Phase, there is no need to perform this step. Skip straight to the first <a href="#ii-impulses">Impulse</a>.</p></blockquote> <p>All guerrilla units in the Sanctuary Arrival hexes <code>2.4</code>  are moved into the main portion of each Sanctuary, where they are free to re-enter the Chadian hex grid (see <a href="#_1-4-3-leaving-a-sanctuary-box">Leaving a Sanctuary Box</a>).</p> <h3 id="_3-moundou-negotiation"><a href="#_3-moundou-negotiation" class="header-anchor">#</a> 3. Moundou Negotiation</h3> <p>The Rebel Commander attempts to rally the neutral MRP guerrilla faction to his cause if MRP have not already been attacked at their base in Moundou <code>1849</code>.</p> <ul><li>If attacked by any player, MRP are immediately activated and controlled by the player which did not attack them.</li> <li>Otherwise, MRP joins the Rebel side during the negotiation phase, on a single die roll of 5 or 6.</li></ul> <p>Remove the IGF (Independent Guerrilla Faction) marker from the MRP force when they are activated.</p> <h2 id="ii-impulses"><a href="#ii-impulses" class="header-anchor">#</a> II. Impulses</h2> <div class="mobile"></div> <blockquote><p><a href="#_1-movement">1. Movement</a></p> <p><a href="#_2-battle">2. Battle</a></p></blockquote> <p>The Government Player performs Movement and Battle in order to complete their Segment (see <a href="/rulebook/#sequence-of-play">Sequence of Play intro</a>). Next, the Rebel Player does the same. A Government Segment followed by a Rebel Segment constitutes one Impulse. The Impulse is repeated three times per Tactical Phase.</p> <p>At the start of the first Tactical Phase, the Government Player is also the FAN Player. </p> <h3 id="_1-movement"><a href="#_1-movement" class="header-anchor">#</a> 1. Movement</h3> <blockquote><p><a href="#_1-1-basic-movement-rules">1.1 Basic Movement Rules</a> <br> <a href="#_1-2-desert-water-supply">1.2 Desert Water Supply</a><br> <a href="#_1-3-intervention-units">1.3 Intervention Units</a><br> <a href="#_1-4-guerrilla-sanctuaries">1.4 Guerrilla Sanctuaries</a><br> <a href="#_1-5-commanders-and-leaders">1.5 Commanders and Leaders</a><br> <a href="#_1-6-fortifications">1.6 Fortifications</a><br> <a href="#_1-7-air-transport">1.7 Air Transport</a></p></blockquote> <blockquote><p><strong>Order of Movement</strong></p> <ul><li>Sanctuary entry for guerrillas in New Arrivals (see <a href="#_1-4-2-sanctuary-countries">entry into Sanctuaries</a>)</li> <li>Ground movement and movement of Air units (see <a href="#_1-1-basic-movement-rules">Basic Movement Rules</a>)</li> <li>Air transport and airmobile movement (see <a href="#_1-7-air-transport">Air transport</a>)</li></ul></blockquote> <h4 id="_1-1-basic-movement-rules"><a href="#_1-1-basic-movement-rules" class="header-anchor">#</a> 1.1 Basic Movement Rules</h4> <p>Units move individually or in stacks through the hex grid, expending the movement points (MPs) for entering various kinds of terrain (see <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a>), for infiltrating out of enemy-occupied hexes, and so on. While one player moves units, the other player awaits their Segment and is not allowed to move any units.</p> <p>The number of MPs available to a unit is determined by its Movement Allowance, which is displayed on the unit piece (see <a href="/rulebook/#_1-1-combat-units">Combat Units intro</a>). No unit may ever exceed its printed Movement Allowance unless it moves only a single hex.</p> <p>If a player wishes to attack enemy units, they must move the attacking pieces to a position adjacent to the enemy units they wish to attack. This is done during the Movement part of a player Segment; adjacent enemy units are then attacked during Battle (see <a href="#_2-2-combat-procedure">combat procedure</a>).</p> <h5 id="_1-1-2-stacking-limits"><a href="#_1-1-2-stacking-limits" class="header-anchor">#</a> 1.1.2 Stacking Limits</h5> <p>One of the basic limitations on Movement is how many units are allowed to occupy a single hex. &quot;Step Value&quot; is a metric that is used to determine such stacking limits.</p> <p>Two charts are used to calculate stacking limits:</p> <ul><li>Each unit type has a Step Value assigned to it. The Step Value of each kind of unit can be found in the <a href="/rulebook/tables.html#unit-costs-and-values">Unit Costs and Values Charts</a>.</li> <li>Each type of terrain has a maximum step value allowed. The stacking limit for different zones can be found in the <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a>.  While the Terrain Effects Charts impose a lower limit in some cases, the default stacking limit is a Step Value of 9.</li></ul> <p>Note that Commanders and Leaders never count against stacking, and that there is no stacking limit in Sanctuaries <code>2.5</code>.</p> <p>Although units can cross through hexes without respecting their stacking limits, each unit on the game map must respect the maximum stacking limit of the destination hex. Stacking limits also apply throughout the combat portion of each player Segment.</p> <p>No substitutions or &quot;breakdown&quot; of larger units into smaller units is allowed during Movement. See example below.</p> <div class="example"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>A battalion unit (which is a single game piece) cannot be broken down into three company units (three game pieces). However, a large force — say, three battalions and two companies stationed in Moussoro <code>2033</code> — may be broken up into its individual units during Movement. Two battalions and a company may head north toward Salal, while a battalion and a company may break off and head south toward Massakori.</p></div> <div class="note"></div> <h5 id="_1-1-3-terrain-effects"><a href="#_1-1-3-terrain-effects" class="header-anchor">#</a> 1.1.3 Terrain Effects</h5> <blockquote><p>This section touches on important details in the <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a>.</p></blockquote> <p>Marshes</p> <ul><li>Perennial Marshes <code>1.4</code> restrict movement year-round, while Seasonal Marshes <code>1.5</code> only restrict movement during the Rain Season (odd-numbered Tactical Phases).</li> <li>See the <a href="/rulebook/tables.html#marshes">marshes Terrain Effects Chart</a> for details and exceptions.</li></ul> <p>Rivers</p> <ul><li>Note that the extra +1 movement cost listed on the <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> does not apply to land units using the road or track movement rate when crossing a river.</li></ul> <p>Mountains</p> <ul><li>Mountain defense adjustments and movement costs apply to any hex that contains any portion of mountain terrain. Note that the updated game map does not include partial mountain hexes; a hex is either a mountain hex or it is not.</li></ul> <p>Roads and Tracks</p> <ul><li>Units may use road or track movement rates only when following the road/track through a hexside (including rivers).</li> <li>In marsh hexes, road and track movement rates may only be used during the Dry Season. Roads make no difference during Rainy Season (see <a href="/rulebook/tables.html#marshes">marshes Terrain Effects Charts</a> for details).</li></ul> <p>Partial Lake</p> <ul><li>Partial Lake hexes <code>1.7</code> can be traversed as if they are normal land hexes.</li></ul> <h5 id="_1-1-4-enemy-occupied-hexes"><a href="#_1-1-4-enemy-occupied-hexes" class="header-anchor">#</a> 1.1.4 Enemy Occupied Hexes</h5> <p>There are no Zones of Control in Chad; units may freely enter and exit hexes adjacent to enemy units without any penalty or additional cost.</p> <p>Generally, units may not enter hexes containing enemy units. However, under certain specific conditions, adjacent units can actually pass through an enemy occupied hex, using one of two methods: Infiltration or Leader Overrun.</p> <h6 id="infiltration"><a href="#infiltration" class="header-anchor">#</a> Infiltration</h6> <ul><li>A guerrilla unit or leader that is adjacent (or moves adjacent) to an enemy-occupied hex may move through (infiltrate) the target hex into another hex adjacent to the target. Conventional units may never infiltrate.</li> <li>An infiltrating unit must have sufficient Movement Points remaining to pay for all terrain costs in the infiltrated hex and a destination hex that does not contain any enemy units.</li> <li>The infiltrator must also pay one additional MP if the infiltrated hex is occupied by enemy guerrilla units and/or FANT units; or two additional MPs if the target hex contains any Libyan or French combat units.</li> <li><strong>Infiltration may never occur through a hex containing any OAU combat units or a Fortification marker</strong>.</li></ul> <h6 id="leader-overrun"><a href="#leader-overrun" class="header-anchor">#</a> Leader Overrun</h6> <ul><li>A unit (including Commander or Guerrilla Leader) is not required to stop or expend any additional MPs when entering a hex occupied solely by an enemy Commander or Leaders.</li> <li>If the moving unit is a Combat Unit (as opposed to a Commander, Guerrilla Leader, or Special Unit), the Commander and/or Leaders in the target hex are immediately eliminated.</li></ul> <p>Units may never end movement in or attack from a hex containing enemy units.</p> <h5 id="_1-1-5-prohibited-movement"><a href="#_1-1-5-prohibited-movement" class="header-anchor">#</a> 1.1.5 Prohibited Movement</h5> <p>Units may not perform any of the following movement actions:</p> <ul><li>Retreat into a Sanctuary Entry hex <code>2.4</code> outside of Chad as a result of combat.
+<ul><li>Exception: eligible units may safely retreat into the Sudan Free Zone <code>2.3</code> (see <a href="#_1-4-4-movement-in-the-sudan-free-zone">Movement in the Sudan</a>).</li></ul></li> <li>Enter or retreat across an all-Lake hex <code>1.6</code>.</li> <li>Retreat or advance into an enemy-occupied hex as a result of combat.</li></ul> <p>Any unit that cannot avoid performing any of these prohibited movement actions is immediately eliminated.</p> <h4 id="_1-2-desert-water-supply"><a href="#_1-2-desert-water-supply" class="header-anchor">#</a> 1.2 Desert Water Supply</h4> <p>All combat units operating in desert terrain <code>1.1</code> must ensure themselves a water supply.</p> <h5 id="_1-2-1-the-desert"><a href="#_1-2-1-the-desert" class="header-anchor">#</a> 1.2.1 The Desert</h5> <p>Desert terrain <code>1.1</code>  includes all terrain within the Desert zone including depression hexes <code>1.10</code> and mountain hexes <code>1.9</code> (see <a href="#desert-1-1">Desert definition</a>).</p> <p>Water is supplied in a desert terrain hex from four possible sources:</p> <ul><li>towns <code>3.1</code></li> <li>villages <code>3.2</code></li> <li>oases <code>1.11</code></li> <li>wells <code>3.7</code> - <code>3.8</code></li></ul> <p>Marshes, rivers and lakes may not be used as a water source. </p> <h5 id="_1-2-2-water-requirements"><a href="#_1-2-2-water-requirements" class="header-anchor">#</a> 1.2.2 Water Requirements</h5> <p>Units must abide by the following water requirements:</p> <ul><li>Conventional units operating in desert terrain must begin each friendly player Segment on a water source in order to function normally.</li> <li>All combat units of any type operating in desert terrain must end each Tactical Phase on a water source (see <a href="#_2-desert-water-supply-check">Desert Water Supply Check</a> during Tactical Phase Wrap-up). These restrictions also apply to units that end their retreat in desert terrain as a result of combat.</li></ul> <p>Commanders and leaders do not have to meet water requirements.</p> <h5 id="_1-2-3-effects-on-conventional-units"><a href="#_1-2-3-effects-on-conventional-units" class="header-anchor">#</a> 1.2.3 Effects on Conventional Units</h5> <p>If a conventional unit begins a player Segment in a desert terrain, but not on a functioning water source, the unit suffers the following penalties (round down in case of fractions):</p> <ul><li>Movement allowance halved</li> <li>Conventional and guerrilla combat strengths halved</li></ul> <p>Both penalties apply for the entire player Segment. A unit may only avoid the penalties by beginning a subsequent Segment on a functioning water source, or in a non-desert terrain hex.</p> <p>Use <code>No Water</code> markers to indicate which units suffer the indicated penalties.</p> <h4 id="_1-3-intervention-units"><a href="#_1-3-intervention-units" class="header-anchor">#</a> 1.3 Intervention Units</h4> <h5 id="_1-3-1-roads-and-tracks"><a href="#_1-3-1-roads-and-tracks" class="header-anchor">#</a> 1.3.1 Roads and Tracks</h5> <p>All OAU and Libyan units inside Chad must always remain on or adjacent to a hex containing a Road or Track.</p> <p>French are not restricted by roads and tracks.</p> <h5 id="_1-3-2-north-region"><a href="#_1-3-2-north-region" class="header-anchor">#</a> 1.3.2 North Region</h5> <p>The North Region comprises the prefectures of Aouzou, Tibesti, Bourkou, and Ennedi, (<a href="/map/#regions">see map legend item <code>2.1</code></a> and <a href="/rulebook/terms.html#region-2-1">&quot;Region&quot; definition</a>).</p> <p>Intervention units that may not enter the north region at any time:</p> <ul><li>French and OAU ground units</li> <li>Units moving by <a href="#_1-7-air-transport">Air Transport or
+Airmobile Movement</a></li></ul> <p>Units that may:</p> <ul><li>Air units (no Air units are involved in Opération Manta)</li></ul> <h5 id="_1-3-3-effect-on-guerrilla-infiltration"><a href="#_1-3-3-effect-on-guerrilla-infiltration" class="header-anchor">#</a> 1.3.3 Effect on Guerrilla Infiltration</h5> <ul><li>Any guerrillas or guerrilla leaders that perform Infiltration through a target hex occupied
+by at least one unfriendly Libyan or French
+combat unit must pay two additional Movement Points
+instead of the usual one.</li> <li>Guerrillas and
+leaders may not perform Infiltration through a
+target hex that contains an OAU combat unit.</li></ul> <p>See <a href="#infiltration">infiltration rules</a>.</p> <h5 id="_1-3-4-oau-unit-movement"><a href="#_1-3-4-oau-unit-movement" class="header-anchor">#</a> 1.3.4 OAU Unit Movement</h5> <p>OAU units are considered peacekeeping
+forces.  As such, they must abide by the following special movement rules:</p> <ul><li>They may never
+voluntarily move adjacent to an enemy (Rebel)
+combat unit.</li> <li>If an OAU unit finds itself adjacent
+to a Rebel combat unit at the beginning of the
+friendly segment of an Impulse, the OAU unit
+must be moved so that it is no longer adjacent.</li> <li>If the Government player cannot or will not do so,
+then the OAU unit is immediately withdrawn
+from play.</li></ul> <p>Note that OAU units also never participate in combat, even as defenders (see <a href="#_2-5-4-special-oau-restrictions-and-automatic-withdrawal">OAU combat restrictions</a>).</p> <div class="more"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Given the above restrictions, players will find that OAU units are mainly useful for...</p> <ul><li>Blocking enemy movement during the length of the enemy player Segment</li> <li><a href="#_1-6-fortifications">Building fortifications</a></li></ul> <p>OAU units may not use their own fortifications in battle since they can neither attack nor defend, meaning that their fortifications should by built where they can be accessed used by other government troops in combat.</p></div> <h4 id="_1-4-guerrilla-sanctuaries"><a href="#_1-4-guerrilla-sanctuaries" class="header-anchor">#</a> 1.4 Guerrilla Sanctuaries</h4> <p>Sanctuary countries <code>2.5</code> allow certain guerrilla factions with whom they have agreements to take refuge from enemy attack within their borders. Each guerrilla faction has a Sanctuary that contains the faction's initials. Sanctuary Entry hexes <code>2.4</code> corresponding to each Sanctuary are located along the border with Chad.</p> <p>Certain guerrilla factions may also enter hexes on the map designated as part of the Sudan (see <a href="/rulebook/play.html#_1-4-4-movement-in-the-sudan-free-zone">movement in the Sudan</a>).</p> <h5 id="_1-4-1-sanctuary-entry-hexes"><a href="#_1-4-1-sanctuary-entry-hexes" class="header-anchor">#</a> 1.4.1 Sanctuary Entry Hexes</h5> <p>During the friendly Segment of an Impulse, a
+guerrilla combat unit or leader may enter a Sanctuary Entry hex for its designated Sanctuary country
+from an adjacent hex inside Chad. Movement
+cost for the Entry hex is 1 MP.</p> <p>The unit must then
+be placed in the New Arrival zone for the remainder of the Movement portion of a player Segment. Units may not attack or
+be attacked in an Entry hex.</p> <div class="map"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The New Arrivals zone can be found:</p> <ul><li>1991 map: In a floating sanctuary box outside of Chad.</li> <li>2021 map: The Sanctuary Entry hexes <em>are</em> the New Arrivals zone <code>2.4</code>.</li></ul></div> <h5 id="_1-4-2-sanctuary-countries"><a href="#_1-4-2-sanctuary-countries" class="header-anchor">#</a> 1.4.2 Sanctuary Countries</h5> <p>When Guerrilla Units occupy a Sanctuary New Arrival zone from a previous player Segment, the Movement portion of a subsequent Segment must begin with moving these units to the Sanctuary proper. From there, they are free to enter the Chadian hex grid.</p> <p>In short, <strong>units cannot enter and leave a Sanctuary in the same player Segment.</strong></p> <div class="map"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Sanctuaries can be found:</p> <ul><li>1991 map: In a floating Sanctuary bod outside Chad.</li> <li>2021 map: directly in the neighboring Sanctuary Country <code>2.5</code>.</li></ul></div> <p>During the <a href="#_1-special-guerrilla-withdrawal">Special Guerrilla Withdrawal</a> portion of Tactical Phase Wrap-up, certain guerrilla units and Commanders may enter New Arrivals from anywhere on the game map.</p> <h5 id="_1-4-3-leaving-a-sanctuary-box"><a href="#_1-4-3-leaving-a-sanctuary-box" class="header-anchor">#</a> 1.4.3 Leaving a Sanctuary box</h5> <p>A unit in a Sanctuary (but not in the
+New Arrivals section) may renter the hex-grid
+during any friendly movement segment of an
+Impulse.</p> <p>To re-enter Chad...</p> <ul><li>The unit is taken out of the box
+and placed in any Sanctuary Entry hex in the
+country where the box is located, paying one MP.</li> <li>It must then <em>immediately</em> enter an adjacent hex inside Chad,
+paying the normal movement cost for the hex and
+any other hexes it may enter.</li> <li>If for any reason the
+unit cannot leave its Entry hex and enter Chad, it
+is placed in the new arrivals section once more.</li></ul> <div class="example"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>A FAP unit wishes to move into the Sanctuary box in Libya.</p> <ul><li>The unit must be adjacent to an Entry hex on Chad's northern border, and must have one MP to expend in order to enter the hex.</li> <li>Once arrived in the Entry Hex, the unit remains in the hex as a New Arrival for the remainder of the Segment.</li> <li>At the beginning of the following Segment, the FAP unit is moved out of the Entry/New Arrival hex into Libya itself.</li> <li>During the player's next turn, the unit may then expend one MP and be placed in any Libya Sanctuary Entry hex. From there, it must <em>immediately</em> enter an adjacent hex inside Chad (only units <em>leaving</em> Chad and <em>entering</em> the Sanctuary remain in the Entry hex).</li> <li>If for some reason the unit cannot enter Chad, it becomes a New Arrival once again and thus remains in the entry hex.</li></ul></div> <div class="recap"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>While Sanctuary Entry hexes are in reality used both to enter and exit Sanctuaries, when using the 2021 game map it is only when entering a Sanctuary that units remain on the Sanctuary Entry hexes for a given amount of time. When leaving the Sanctuary, the Sanctuary Entry hexes really only exist to indicate <em>where</em> a unit can re-enter Chad, as well as to incur the cost of 1 MP.</p></div> <h5 id="_1-4-4-movement-in-the-sudan-free-zone"><a href="#_1-4-4-movement-in-the-sudan-free-zone" class="header-anchor">#</a> 1.4.4 Movement in the Sudan Free Zone</h5> <p>A small portion of Sudan around the
+Village of El Geneina <code>4234</code> is included on
+the regular hex-grid. Only units and leaders from
+factions designated in the Sudan Sanctuary
+(FAN, PLA, ANL) may enter or exit this area of
+the map. Otherwise, all normal movement
+rules, including Sanctuary Entry Hexes apply.
+See also <a href="/rulebook/play.html#_2-4-1-sudan-free-zone">Combat in Sudan Free Zone</a>.</p> <h4 id="_1-5-commanders-and-leaders"><a href="#_1-5-commanders-and-leaders" class="header-anchor">#</a> 1.5 Commanders and Leaders</h4> <h5 id="_1-5-1-guerrilla-faction-leaders"><a href="#_1-5-1-guerrilla-faction-leaders" class="header-anchor">#</a> 1.5.1 Guerrilla Faction Leaders</h5> <p>During the friendly player segment of an
+Impulse, faction leaders controlled by the player
+may exercise the exact same movement allowed for other units of their faction, unless specifically prevented from doing so.</p> <p>By way of review, possible leader movements therefore includes the following:</p> <ul><li>Move from hex to hex within Chad using
+normal movement.</li> <li>Move into the New Arrival zone of a Sanctuary for the leader's designated faction via the appropriate Sanctuary Entry hex.</li> <li>Move between the Sanctuary designated for the leader's faction and a corresponding Sanctuary Entry hex in order to reenter Chad.</li></ul> <h5 id="_1-5-2-government-commander"><a href="#_1-5-2-government-commander" class="header-anchor">#</a> 1.5.2 Government Commander</h5> <p>On top of normal movement from hex to hex within Chad, the Government player's Commander may also move directly between any two Airfields or Airbases in Chad occupied by Government-affiliated combat units (either conventional or guerrilla).</p> <p>The Government Commander can never enter a Sanctuary box or Sanctuary Entry hex.</p> <h5 id="_1-5-3-rebel-commander"><a href="#_1-5-3-rebel-commander" class="header-anchor">#</a> 1.5.3 Rebel Commander</h5> <p>On top of normal movement within Chad, the Rebel Commander may also perform the following special movement:</p> <ul><li>Enter <em>any</em> Sanctuary, regardless of Sanctuary affiliation</li> <li>Move from any Sanctuary to any
+other Sanctuary</li></ul> <p>The Rebel Commander should enter and leave Sanctuaries using normal movement rules (see <a href="#_1-4-guerrilla-sanctuaries">Guerrilla Sanctuaries</a>).</p> <h5 id="_1-5-4-fan-commander-s-movement-bonus"><a href="#_1-5-4-fan-commander-s-movement-bonus" class="header-anchor">#</a> 1.5.4 FAN Commander's Movement Bonus</h5> <p>Any FAN or pro-FAN guerrillas and leaders
+that begin the friendly player segment stacked
+with (or in the same Sanctuary box) as the FAN
+Commander double their movement point
+allowance during the movement segment of the
+first Impulse of each Tactical Phase. This bonus does not apply to the second or third Impulses
+of a Tactical Phase. The units must also end their
+movement stacked with or adjacent to the Commander.</p> <div class="more"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>This rule reflects the superior
+military training of Habré's FAN units, which were
+pretty much able to run rings around their opponents due to superior planning.  It also reflects Habré's own tactical skill, which impacts not only his movement bonus but also the skill points he brings to combat, which are triple that of Goukouni's.</p></div> <h4 id="_1-6-fortifications"><a href="#_1-6-fortifications" class="header-anchor">#</a> 1.6 Fortifications</h4> <p>Fortifications may be built in any hex inside
+Chad. Only conventional infantry battalions
+(of all nationalities) may construct fortifications.
+Infantry companies stacked together may not construct fortifications even if their total number equals or exceeds that of a battalion.</p> <p>To build a fortification:</p> <ul><li>A battalion
+must remain in a single hex during an entire
+friendly player segment of any Impulse.</li> <li>Place a
+Fortification Construction marker on the
+battalion's hex at the beginning of the player
+segment (see <a href="/rulebook/#markers">markers intro</a>).</li> <li>Replace the Construction marker with a Completed Fortification marker
+at the end of the segment.</li></ul> <p>Once built, Fortifications are neutral; they benefit whichever player has units defending in the hex.</p> <p>Rules for Fortification Marker removal:</p> <ul><li>A Fortification marker is removed only if the defender completely vacates the hex due to retreat or elimination in combat.</li> <li>It is not removed if the defender leaves the hex during normal movement.</li></ul> <h4 id="_1-7-air-transport"><a href="#_1-7-air-transport" class="header-anchor">#</a> 1.7 Air Transport</h4> <p>Airfields and Airbases are used for Air Transport of selected ground units from any one Airfield/
+Airbase to another inside Chad during Government segments.</p> <p>Eligible units:</p> <ul><li>The Government Commander piece (Habré or
+Goukouni, depending upon who is the
+Government)</li> <li>Up to two FANT paratroop companies</li> <li>Up to three French 11th Division
+paratroop units (if any have entered play)</li></ul> <p>To use Air Transport, a unit must:</p> <ul><li>Occupy an
+Airfield or Airbase hex</li> <li>Must not perform any other movement during the friendly segment. After all movement is completed for the player segment, but prior to any combat, each eligible unit may move directly to another Airfield or Airbase unoccupied by Rebel-affiliated
+units
+<ul><li>However, an eligible unit that was placed on the map
+during the current player segment may use Air
+Transport (e.g. a French unit brought in from the Government Replacements and Reinforcements box).</li></ul></li></ul> <p><strong>Important</strong>: French units may not land in an Airfield/Airbase in the North region.</p> <h5 id="_1-7-1-airmobile-movement"><a href="#_1-7-1-airmobile-movement" class="header-anchor">#</a> 1.7.1 Airmobile Movement</h5> <p>French airborne units may use airmobile
+movement (in Opération Manta, a single airborne paratroop battalion is in play). Airmobile movement allows units to move to/from
+friendly Airfields and Airbases.</p> <p>Airmobile movement allows:</p> <ul><li>Movement up to 30 hexes.
+This may be through enemy units and prohibited
+terrain. Each hex moved through costs only 1 MP.</li> <li>Movement of up to three French
+11th Division paratroop units (if any have entered play).</li></ul> <p>To use Airmobile movement, a unit must:</p> <ul><li>Choose one of the following:
+<ul><li>Either occupy an Airfield or Airbase hex at the
+<em>beginning</em> of its turn. In this case it may <em>end</em> the move on any
+playable terrain.)</li> <li>Or <em>end</em> its movement on a Airfield or Airbase
+unoccupied by Rebel-affiliated units. In this case it may
+<em>begin</em> on any playable terrain.</li></ul></li> <li>Units may not move off/on to
+the map using Airmobile movement.</li> <li>A unit using Airmobile movement may not
+conduct any other movement in that movement
+segment.
+<ul><li>However, an eligible unit that was placed on the map during the current player segment may use Airmobile movement.</li></ul></li></ul> <p>Airmobile movement is conducted after all movement is completed for the player
+segment, but prior to any combat.</p> <p><strong>Important</strong>: French units may not land in an Airfield/Airbase in the North region.</p> <h3 id="_2-battle"><a href="#_2-battle" class="header-anchor">#</a> 2. Battle</h3> <blockquote><p><a href="#_2-1-guerrilla-pre-combat-operations">2.1 Guerrilla Pre-Combat Operations</a><br> <a href="#_2-2-combat-procedure">2.2 Combat Procedure</a> <br> <a href="#_2-3-terrain-and-combat">2.3 Terrain and Combat</a> <br> <a href="#_2-4-sanctuaries-and-combat">2.4 Sanctuaries and Combat</a> <br> <a href="#_2-5-special-combat-rules">2.5 Special Combat Rules</a> <br> <a href="#_2-6-commanders-an-leaders-in-combat">2.6 Commanders and Leaders in Combat</a> <br></p></blockquote> <blockquote><p><strong>Order of Battle</strong></p> <ul><li>Guerrilla pre-combat operations (<a href="#_2-1-guerrilla-pre-combat-operations">link</a>)</li> <li>Combat prep (see <a href="#_2-2-1-combat-determination">Combat Determination</a> and <a href="#_2-2-2-differential-assessment">Differential Assessment</a>)</li> <li>Combat resolution (see <a href="#_2-2-3-combat-results">combat Results</a> and <a href="#_2-5-2-advance-after-combat">Advance After Combat</a>)</li></ul></blockquote> <p>Combat occurs after the completion of all
+movement in a player Segment of an Impulse. There are two types of
+combat: guerrilla combat and conventional combat. The <a href="/rulebook/tables.html#combat-determination">Combat Determination Chart</a> will be used to determine which occurs.
+Both types of combat use the same <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>.</p> <h4 id="_2-1-guerrilla-pre-combat-operations"><a href="#_2-1-guerrilla-pre-combat-operations" class="header-anchor">#</a> 2.1  Guerrilla Pre-Combat Operations</h4> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>First time players may want to skip pre-combat operations and go straight to <a href="#_2-2-combat-procedure">combat procedure</a>.</p></div> <p>When a player announces their intention to attack a given hex, a guerrilla defender in that hex may attempt a number of pre-combat operations in order to maintain control of the situation.</p> <p>All defending guerrillas and guerrilla leaders in a hex, as a group, must perform one (and
+only one) of the following operations after <a href="#_2-2-1-combat-determination">Combat determination</a> and <a href="#_2-2-2-differential-assessment">Differential assessment</a>, but before combat is actually resolved:</p> <ul><li>Remain in place and defend the target hex
+normally (see <a href="#_2-2-combat-procedure">normal combat procedure</a>)</li> <li>Attempt withdrawal (see below)</li> <li>Perform an Ambush (see below)</li></ul> <p>If any defending units remain in the target
+hex following Guerrilla Pre-Combat Operations,
+combat is performed normally with surviving
+attacking and defending units. If no defending
+units remain, the attacking units may perform
+<a href="#_2-5-2-advance-after-combat">Advance after Combat</a>.</p> <h6 id="withdrawal"><a href="#withdrawal" class="header-anchor">#</a> Withdrawal</h6> <p>Determining Withdrawal:</p> <ul><li>The defending player rolls
+one die for all the guerrilla units in the target hex.</li> <li>The player consults the <a href="/rulebook/tables.html#guerrilla-pre-combat-withdrawal">Guerrilla
+Pre-Combat Withdrawal Table</a> to determine possible Withdrawal given the die roll.</li></ul> <p>Depending on the result from the Guerrilla
+Pre-Combat Withdrawal Table, either all of the guerrilla units in the hex will be allowed to
+retreat or none of them will.</p> <p>Retreating procedure:</p> <ul><li>Retreating units must move two hexes away in any direction.</li> <li>Units need not remain stacked together.</li> <li>If a retreating unit is forced to violate stacking or perform <a href="#_1-1-5-prohibited-movement">Prohibited Movement</a>, it is eliminated.</li></ul> <h6 id="ambush"><a href="#ambush" class="header-anchor">#</a> Ambush</h6> <p>Using whatever guerrilla combat units, Commanders, and
+Leaders they wish, the defending player selects one adjacent hex
+containing attacking enemy units and immediately performs a special combat against all
+units in that hex.</p> <p>This combat follows all normal rules, except that the
+guerrillas are treated as the attacker for all purposes and the original attacking units are treated as
+the defenders. One additional rule concerns terrain:</p> <ul><li>The ambush defender (i.e. the original
+attacker) receives no terrain or improved position combat benefits (see <a href="#_2-3-terrain-and-combat">Terrain and Combat</a>).</li> <li>If the original defending force contains no conventional units, all original defenders remaining in the target hex
+after the Ambush receive no terrain or improved position combat benefits if the original attacker subsequently performs the
+scheduled combat. This is because a pure guerrilla force exposes itself by making an ambush and lacks
+cover from conventional units to return to its
+positions.</li></ul> <p>Note that if any losses, retreats, or advances after combat occur, the originally scheduled combat differential will need to be recalculated.</p> <h4 id="_2-2-combat-procedure"><a href="#_2-2-combat-procedure" class="header-anchor">#</a> 2.2 Combat Procedure</h4> <p>Combat may only occur between adjacent
+enemy units. Below are the basic rules for combat:</p> <ul><li>Units are never required to attack.</li> <li>If any unit in a hex attacks, however, all
+units in the same hex must perform combat
+against a single hex occupied by enemy units.</li> <li>All units defending a hex must defend.</li> <li>Units in different hexes may combine their
+strengths when attacking an enemy-occupied hex.</li> <li>Two or more defending hexes may not be
+attacked simultaneously.</li></ul> <h5 id="_2-2-1-combat-determination"><a href="#_2-2-1-combat-determination" class="header-anchor">#</a> 2.2.1 Combat Determination</h5> <p>Use the <a href="/rulebook/tables.html#combat-determination">Combat Determination Chart</a> to decide which type of combat must be
+performed. Combat type depends on two factors:</p> <ul><li>The composition of the forces involved in a particular combat</li> <li>The presence of improved positions (Town, Oasis, or a Fortification) in the defender's hex</li></ul> <p>If Conventional Combat occurs, use only the
+conventional combat strengths printed on both
+the attacking and defending units to determine
+the proper combat differential (see <a href="/rulebook/#_1-1-combat-units">Combat Units intro</a>). If Guerrilla Combat occurs, use only the guerrilla combat strengths
+instead.</p> <p><strong>Important</strong>: No mixing of conventional
+and guerrilla combat strengths in a player's attacking or defending force is allowed. Under no
+circumstances may one side in a combat use
+guerrilla strengths, while the other uses conventional strengths.</p> <h5 id="_2-2-2-differential-assessment"><a href="#_2-2-2-differential-assessment" class="header-anchor">#</a> 2.2.2 Differential Assessment</h5> <p>Once Combat Determination has concluded, the players calculate the strength differential between the forces involved in Combat.</p> <p>The differential is always positive; if a conventional battle occurs between two forces with conventional strengths of 20 and 9, the differential will always be 11, regardless of which force represents the attacker or defender, Government units or Rebel units, FAN Player or FAP Player.</p> <h5 id="_2-2-3-combat-results"><a href="#_2-2-3-combat-results" class="header-anchor">#</a> 2.2.3 Combat Results</h5> <p>Determine Combat Results using the <a href="/rulebook/tables.html#combat-results">Combat Results Chart</a>. Six factors determine combat results as per the Chart:</p> <ul><li>The strength differential between the forces involved</li> <li>The terrain occupied by the defender (see <a href="#_2-3-terrain-and-combat">Terrain and Combat</a>)</li> <li>The presence of Commanders in either force</li> <li>The presence of Guerrilla Leaders in either force</li> <li>The presence of French units in either force</li> <li>A roll of both dice</li></ul> <p>If the defending force is eliminated or retreats for any reason. any number of surviving
+units belonging to the attacking force may occupy the target hex (see <a href="#_2-5-2-advance-after-combat">Advance After Combat</a>).</p> <h4 id="_2-3-terrain-and-combat"><a href="#_2-3-terrain-and-combat" class="header-anchor">#</a> 2.3 Terrain and Combat</h4> <p>The &quot;Defense Adjustment&quot; column of the
+<a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> lists the number of
+points that are added to the defender's total
+combat strength (either guerrillas or conventional) when the defender occupies certain advantageous terrain.
+Adjustments are cumulative.</p> <div class="example"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>A defending force possessing a combat strength of 5 is
+located in a Mountain hex (+3 Defense Adjustment) containing an oasis
+(+1 Defense Adjustment). As per the Terrain Effects Charts, its total combat strength is 9 (5+3+1).</p></div> <h5 id="_2-31-improved-positions"><a href="#_2-31-improved-positions" class="header-anchor">#</a> 2.31 Improved Positions</h5> <p>While many terrain types provide defensive advantages in combat by adding to the defender's combat strength, an Improved Position provides this advantage <em>in conventional combat alone</em>. As per the Terrain Effects Charts, there are three types of improved positions:</p> <ul><li>Fortification marker (see <a href="#_1-6-fortifications">building fortifications</a>)</li> <li>Town</li> <li>Oasis</li></ul> <p>Defenders in an Improved Position hex may only choose guerilla
+combat if...</p> <ul><li>All defenders are guerrillas</li> <li>The defending player chooses guerrilla
+combat</li></ul> <p>In a guerrilla combat, <em>no defensive adjustment is made for Improved Positions</em>. This rule is incorporated in the <a href="/rulebook/tables.html#terrain-effects">Terrain Effects Charts</a> (see chart key, letter <code>H</code>).</p> <h4 id="_2-4-sanctuaries-and-combat"><a href="#_2-4-sanctuaries-and-combat" class="header-anchor">#</a> 2.4 Sanctuaries and Combat</h4> <p>Combat may not occur between units inside
+a Sanctuary or between units in different
+Sanctuaries.</p> <h5 id="_2-4-1-sudan-free-zone"><a href="#_2-4-1-sudan-free-zone" class="header-anchor">#</a> 2.4.1 Sudan Free Zone</h5> <p>Combat may occur in the portion of the
+Sudan contained on the regular hex-grid <code>2.3</code>, but
+only between units and leaders permitted to enter
+this area of the map (FAN, PLA, and
+ANL guerrillas and leaders).</p> <h4 id="_2-5-special-combat-rules"><a href="#_2-5-special-combat-rules" class="header-anchor">#</a> 2.5 Special Combat Rules</h4> <h5 id="_2-5-1-stacking-during-and-after-combat"><a href="#_2-5-1-stacking-during-and-after-combat" class="header-anchor">#</a> 2.5.1 Stacking during and after Combat</h5> <p>Stacking limitations are in effect for both
+players at all times throughout the combat portion of a player segment. Note the following implications:</p> <ul><li>Overstacked units are
+eliminated prior to resolving a combat.</li> <li>Retreating units may not enter a hex
+if this violates stacking restrictions.</li> <li>If retreating units cannot avoid violating stacking restrictions, they are eliminated.</li></ul> <h5 id="_2-5-2-advance-after-combat"><a href="#_2-5-2-advance-after-combat" class="header-anchor">#</a> 2.5.2 Advance After Combat</h5> <p>If the defending force is eliminated or retreats for any reason, any number of surviving
+units belonging to the attacking force may occupy the target hex.</p> <p>Advance After Combat rules:</p> <ul><li>Advance after combat is always voluntary for the
+attacker.</li> <li>The attacker cannot violate stacking limits when advancing to the target hex after combat.</li> <li>Units in a defending force may never advance after combat, even if the attacker retreats or is eliminated.</li></ul> <h5 id="_2-5-4-special-oau-restrictions-and-automatic-withdrawal"><a href="#_2-5-4-special-oau-restrictions-and-automatic-withdrawal" class="header-anchor">#</a> 2.5.4 Special OAU Restrictions and Automatic Withdrawal</h5> <p>OAU units are considered &quot;peacekeeping&quot;
+forces that neither attack nor defend normally.</p> <ul><li>OAU units may never attack and are withdrawn
+from play if the hex they occupy is attacked by Rebel combat units.</li> <li>All OAU units are withdrawn before calculating the combat differential or resolving the attack.</li></ul> <h4 id="_2-6-commanders-and-leaders-in-combat"><a href="#_2-6-commanders-and-leaders-in-combat" class="header-anchor">#</a> 2.6 Commanders and Leaders in Combat</h4> <h5 id="_2-6-1-guerrilla-leaders"><a href="#_2-6-1-guerrilla-leaders" class="header-anchor">#</a> 2.6.1 Guerrilla Leaders</h5> <p>A guerrilla leader stacked in the same hex with one or more units of his faction
+modifies the die roll on the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>.</p> <ul><li>Add one (+ 1) to the die roll if the leader
+is part of the attacking force.</li> <li>Subtract one (-1) from the die roll if the leader is part of
+the defending force.</li></ul> <p>Limitations:</p> <ul><li>No more than one Leader may be added or subtracted from a die roll, regardless
+of the number of eligible Leaders present on a
+side.</li> <li>No guerrilla Leader may be used to modify
+the die roll for a force whose Commander is
+present in the combat hex and hence contributing to combat strength.</li></ul> <div class="note"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The above rule has been kept unmodified from the original 1991 rulebook. However, players may want to try applying die roll modifiers based on force strength, rather than on whether a force is an attacker or defender. This is because the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a> is blind to whether or not a force is attacking or defending. Instead, the table favors stronger forces on high die rolls and weaker forces on low die rolls (strength being a factor of conventional or guerrilla strength points). The impact of die roll modifiers on combat results could be more meaningful if the modifiers directly relate to the mechanics of the results chart:</p> <ul><li>The presence of a Leader among the stronger force would increase the die roll, which is generally an advantage for the stronger force given the Combat Results table.</li> <li>The presence of a Leader among the weaker force would decrease the die roll, which is generally an advantage for the weaker force given the Combat Results table.</li></ul> <p>If the 1991 rules are used, a stronger defending force will almost always find itself in the awkward position of being penalized for having a Leader present to aid his troops. Conversely, a weaker attacking force is also penalized for having a Leader present. The same can be said for French forces present — players may want to base French die roll modifiers on force strength as well (see <a href="#_2-6-3-french-units">French units in combat</a>).
+<br><br></p></div> <div class="note"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>There are some situations when a higher roll may inflict more losses on a stronger force and a lower roll may inflict more losses on a weaker force (see cells 11:10-11, 12:8-11, 13:6-7, 14:6-9, 15:6-9, and 16:6-9 in the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>); however, the general pattern is that higher rolls are more favorable to stronger forces. Moreover, the exceptions to this general rule only occur when the combat strength differential is 11 strength points or more.
+<br><br>
+If players also wish to take this design feature of the Combat Results Table into account, one could imagine a rule like the following:</p> <ul><li>Leaders and French units increase the die roll when stacked with the stronger force in a battle; they decrease the die roll when stacked with the weaker force in a battle.</li> <li>Exception: when the combat strength differential is 11 strength points or more, no die roll modifiers are applied.
+<ul><li>First, because the Combat Results Table will not always favor the appropriate force in these situations.</li> <li>Second, because the effect of a die roll modifier on combat is almost irrelevant anyway given the large differentials.</li></ul></li></ul> <p>Finally, a potential solution could also be to redesign the Combat results Chart and erase the irregularities in cells 11:10-11, 12:8-11, 13:6-7, 14:6-9, 15:6-9, and 16:6-9.</p></div> <div class="more"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>One theory emerges as the reason behind the irregularities in cells 13:6-7, 14:6-9, 15:6-9, and 16:6-9 of the Combat Results Table. The function of these cells may have been to temper the overwhelming advantage of a significantly larger force by slightly decreasing this advantage on statistically common die rolls. However, this theory does not explain the irregularities in cells 11:10-11 and 12:8-11.</p></div> <h5 id="_2-6-2-commanders"><a href="#_2-6-2-commanders" class="header-anchor">#</a> 2.6.2 Commanders</h5> <p>If the Commander is stacked in the same hex
+with one or more units of his faction, his military skill is added to the combat strength of his units as per the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>.</p> <div class="more"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>There is some ambiguity about the Commander combat modifier in the 1991 Strategy and Tactics rulebook. The &quot;Commanders in combat&quot; rule prescribes the following:</p> <ul><li><em>Add his Military Skill level to the die roll if the leader is
+part of the attacking force.</em></li> <li><em>Subtract his Military Skill level from the die roll if the leader
+is part of the defending force.</em></li></ul> <p>However, the rule as written contradicts the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>, which prescribed adding the Commander's military skill to his force's combat strength. Since the latter modifies combat results in a more meaningful way, the updated rulebook has favored this version of the Commander combat modifier.</p></div> <h5 id="_2-6-3-french-units"><a href="#_2-6-3-french-units" class="header-anchor">#</a> 2.6.3 French Units</h5> <p>A French ground unit participating in Combat modifies the die roll on the <a href="/rulebook/tables.html#combat-results">Combat Results Table</a>.</p> <ul><li>Add one (+1) to the die roll if the French
+unit is part of the attacking force.</li> <li>Subtract one (-1) from the die roll if the French
+unit is part of the defending force.</li></ul> <p>No more than one (1) may be added or subtracted from a die
+roll. regardless of the number of French units
+present on a side.</p> <p><strong>Important</strong>: Die roll modifiers are <em>not</em> cumulative; for example, if an attacking force as accompanied by both a Leader and a French unit, only 1 is added to the die roll.</p> <div class="note"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Players may want to try applying die roll modifiers based on force strength, rather than on whether a force is an attacker or defender. See rules for <a href="/rulebook/play.html#_2-6-1-guerrilla-leaders">Leader modifiers in combat</a>, &quot;Notes&quot; section.</p></div> <div class="more"></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>This rule represents superior French military planning and operational capabilities. Note that although Habré represents the most skilled Commander in the war, like other Chadian leaders he received no formal military training during his lifetime — Habré's education was in political science. This is a testimony to Habré's military genius, but it also points to the inevitability of French military superiority as a general rule.</p></div> <h5 id="_2-6-4-leader-and-commander-elimination"><a href="#_2-6-4-leader-and-commander-elimination" class="header-anchor">#</a> 2.6.4 Leader and Commander Elimination</h5> <p>Below are the two different scenarios for Leader and Commander elimination:</p> <ul><li>Elimination in Combat: Leaders and Commanders are eliminated if
+all the units they are stacked with suffer total elimination as a result of combat.</li> <li>Elimination in Isolation: A Leader or Commander not stacked with any friendly combat
+units has no combat strength, and is immediately
+eliminated the instant an enemy combat unit (not
+merely another leader, Commander, or Special Unit) enters its
+hex for any reason.</li></ul> <p>Leaders or Commanders cannot be attacked or
+eliminated while in a Sanctuary.</p> <p>Results of elimination:</p> <ul><li>An eliminated Guerrilla Leader
+is immediately placed in the New Arrival
+section of the Sanctuary designated for its faction.</li> <li>If a Commander is eliminated, the game
+immediately ends and the rival Commander wins the war.</li></ul> <h2 id="iii-tactical-phase-wrap-up"><a href="#iii-tactical-phase-wrap-up" class="header-anchor">#</a> III. Tactical Phase Wrap-up</h2> <h3 id="_1-special-guerrilla-withdrawal"><a href="#_1-special-guerrilla-withdrawal" class="header-anchor">#</a> 1. Special Guerrilla Withdrawal</h3> <p>Any guerrilla unit, leader, or Commander inside Chad may be withdrawn from the hex it occupies on the map and
+placed directly in the New Arrival section of the appropriate Sanctuary. No MP's are required or expended for this withdrawal.</p> <h3 id="_2-desert-water-supply-check"><a href="#_2-desert-water-supply-check" class="header-anchor">#</a> 2. Desert Water Supply Check</h3> <p>At the end of each Tactical Phase, all combat units located in the desert terrain, both conventional and guerrilla, that do not occupy a functioning water source are eliminated.</p> <p>Conventional units that do not occupy a functioning water source are also eliminated at the end of each Segment (see <a href="#_1-2-3-effects-on-conventional-units">movement rules for Conventional units in the desert</a>).</p> <div class="desktop"><br> <br> <br> <br> <br> <br></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.97f87da8.js" defer></script><script src="/assets/js/2.8f172fab.js" defer></script><script src="/assets/js/17.847915df.js" defer></script><script src="/assets/js/3.573b5638.js" defer></script>
+  </body>
 </html>
