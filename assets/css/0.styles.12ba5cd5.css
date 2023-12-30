@@ -1117,7 +1117,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Courier New', Courier, monospace !important
+    font-family: menlo, monospace !important
 }
 
 h1 {
@@ -1664,7 +1664,7 @@ table.front thead tr th {
     color: var(--ac);
     font-weight: 400;
     text-align: left;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: menlo, monospace
 }
 
 @media only screen and (max-device-width:719px) {
@@ -2762,7 +2762,7 @@ img[data-v-b628d33e] {
     color: var(--a2);
     width: 300px;
     left: 10px;
-    font-family: 'Courier New', Courier, monospace, monospace;
+    font-family: menlo, monospace;
     padding-bottom: 7px
 }
 
